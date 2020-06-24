@@ -1,0 +1,25 @@
+.overflow-hide {
+  overflow: hidden !important;
+}
+
+.white {
+  color: #fff !important;
+}
+
+@-webkit-keyframes tape {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: -400%;
+  }
+}
+
+@keyframes tape {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: -400%;
+  }
+}

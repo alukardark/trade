@@ -1,0 +1,71 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+
+@font-face {
+	font-family: 'Spectral';
+	src: url('../fonts/Spectral/Spectral-Regular.eot');
+	src: url('../fonts/Spectral/Spectral-Regular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Spectral/Spectral-Regular.woff2') format('woff2'),
+	url('../fonts/Spectral/Spectral-Regular.woff') format('woff'),
+	url('../fonts/Spectral/Spectral-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Playfair Display';
+	src: url('../fonts/PlayfairDisplay/PlayfairDisplay-Bold.eot');
+	src: url('../fonts/PlayfairDisplay/PlayfairDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/PlayfairDisplay/PlayfairDisplay-Bold.woff2') format('woff2'),
+	url('../fonts/PlayfairDisplay/PlayfairDisplay-Bold.woff') format('woff'),
+	url('../fonts/PlayfairDisplay/PlayfairDisplay-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+//@font-face {
+//	font-weight: 500;
+//	font-style: normal;
+//	font-family: 'Graphik';
+//	src: url("../fonts/Graphik-Medium-Web.eot");
+//	src: url("../fonts/Graphik-Medium-Web.eot?#iefix") format("embedded-opentype"),
+//	url("../fonts/Graphik-Medium-Web.woff2") format("woff2"),
+//	url("../fonts/Graphik-Medium-Web.woff") format("woff"),
+//	url("../fonts/Graphik-Medium-Web.ttf") format("truetype");
+//}
+//
+//@font-face {
+//	font-weight: 600;
+//	font-style: normal;
+//	font-family: 'Graphik';
+//	src: url("../fonts/Graphik-Semibold-Web.eot");
+//	src: url("../fonts/Graphik-Semibold-Web.eot?#iefix") format("embedded-opentype"),
+//	url("../fonts/Graphik-Semibold-Web.woff2") format("woff2"),
+//	url("../fonts/Graphik-Semibold-Web.woff") format("woff"),
+//	url("../fonts/Graphik-Semibold-Web.ttf") format("truetype");
+//}
+//
+//
+//
+//@font-face {
+//	font-weight: 700;
+//	font-style: normal;
+//	font-family: 'Graphik';
+//	src: url("../fonts/Graphik-Bold-Web.eot");
+//	src: url("../fonts/Graphik-Bold-Web.eot?#iefix") format("embedded-opentype"),
+//	url("../fonts/Graphik-Bold-Web.woff2") format("woff2"),
+//	url("../fonts/Graphik-Bold-Web.woff") format("woff"),
+//	url("../fonts/Graphik-Bold-Web.ttf") format("truetype");
+//}
+//
+//@font-face {
+//	font-weight: 900;
+//	font-style: normal;
+//	font-family: 'Graphik';
+//	src: url("../fonts/Graphik-Black-Web.eot");
+//	src: url("../fonts/Graphik-Black-Web.eot?#iefix") format("embedded-opentype"),
+//	url("../fonts/Graphik-Black-Web.woff2") format("woff2"),
+//	url("../fonts/Graphik-Black-Web.woff") format("woff"),
+//	url("../fonts/Graphik-Black-Web.ttf") format("truetype");
+//}
