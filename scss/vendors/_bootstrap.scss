@@ -3,48 +3,14 @@ $grid-breakpoints: (
         sm: 576px,
         md: 768px,
         lg: 950px,
-        xl: 1210px
+        xl: 1280px
 ) !default;
 
 $container-max-widths: (
         sm: 540px,
         md: 750px,
         lg: 920px,
-        xl: 1180px
+        xl: 1240px
 ) !default;
 
 
-//
-//@media (min-width: 576px) {
-//  .container-inner{
-//    max-width: 540px;
-//  }
-//}
-//
-//@media (min-width: 768px) {
-//  .container-inner{
-//    max-width: 750px;
-//  }
-//}
-//
-//@media (min-width: 950px) {
-//  .container-inner{
-//    max-width: 920px;
-//  }
-//}
-
-@media (min-width: 1280px) {
-  .container--inner{
-    max-width: 1240px !important;
-  }
-}
-
-
-
-//.container-inner {
-//  width: 100%;
-//  padding-right: 15px;
-//  padding-left: 15px;
-//  margin-right: auto;
-//  margin-left: auto;
-//}

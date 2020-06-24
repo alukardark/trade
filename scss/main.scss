@@ -3,7 +3,8 @@
 @import
 'abstracts/variables',
 'abstracts/functions',
-'abstracts/mixins';
+'abstracts/mixins',
+'abstracts/animations.scss';
 
 
 // 2. Vendors
@@ -20,7 +21,8 @@
 
 // 4. Layout-related sections
 @import
-'layout/header';
+'layout/header',
+'layout/main-banner';
 
 // 5. Components
 //@import

@@ -1,7 +1,10 @@
 .header {
   margin-top: 30px;
+  max-width: 1310px;
+  margin-left: auto;
+  margin-right: auto;
   .container {
-    max-width: 1310px;
+
   }
   &__row {
     display: flex;
@@ -14,14 +17,14 @@
     height: 22px;
     display: block;
     margin-right: 40px;
-    margin-top: 7px;
+    margin-top: 9px;
   }
   &__nav {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: flex-start;
-    margin-top: 7px;
+    margin-top: 8px;
     li {
       margin-right: 35px;
       display: inline-block;
