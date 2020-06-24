@@ -1,25 +1,66 @@
-@keyframes pulsate {
+@keyframes line-1 {
   0% {
-    transform: scale(1) rotate(-10.28deg);
-  }
-  50% {
-    transform: scale(1.1) rotate(-10.28deg);
+    top: 20%;
   }
   100% {
-    transform: scale(1) rotate(-10.28deg);
+    top: 50%;
   }
 }
-@keyframes pulsate-2 {
+@keyframes line-2 {
   0% {
-    transform: scale(1) rotate(-20deg);
-  }
-  50% {
-    transform: scale(1.1) rotate(-20deg);
+    top: 45%;
   }
   100% {
-    transform: scale(1) rotate(-20deg);
+    top: 20%;
   }
 }
+
+@keyframes line-3 {
+  0% {
+    top: 10%;
+  }
+  100% {
+    top: 40%;
+  }
+}
+
+@keyframes line-4 {
+  0% {
+    top: 35%;
+  }
+  100% {
+    top: 20%;
+  }
+}
+
+@keyframes line-5 {
+  0% {
+    top: 10%;
+  }
+  100% {
+    top: 40%;
+  }
+}
+
+@keyframes line-6 {
+  0% {
+    top: 60%;
+  }
+  100% {
+    top: 20%;
+  }
+}
+
+@keyframes line-7 {
+  0% {
+    top: 5%;
+  }
+  100% {
+    top: 40%;
+  }
+}
+
+
 
 
 

@@ -1,5 +1,6 @@
 .main-banner {
   margin-top: 35px;
+  margin-bottom: 100px;
   h1 {
     max-width: 580px;
     margin-left: auto;
@@ -18,6 +19,7 @@
     width: 100%;
     height: 100%;
     z-index: -1;
+    height: 610px;
   }
   &__lines {
     width: 100%;
@@ -30,6 +32,41 @@
       height: 100%;
       background: rgba(227, 227, 227, 0.63);
       position: relative;
+      &:nth-of-type(1){
+        &>span{
+          animation: line-1 2.3s linear infinite alternate;
+        }
+      }
+      &:nth-of-type(2){
+        &>span{
+          animation: line-2 2.6s linear infinite alternate;
+        }
+      }
+      &:nth-of-type(3){
+        &>span{
+          animation: line-3 2.1s linear infinite alternate;
+        }
+      }
+      &:nth-of-type(4){
+        &>span{
+          animation: line-4 2.1s linear infinite alternate;
+        }
+      }
+      &:nth-of-type(5){
+        &>span{
+          animation: line-5 2.3s linear infinite alternate;
+        }
+      }
+      &:nth-of-type(6){
+        &>span{
+          animation: line-6 2.3s linear infinite alternate;
+        }
+      }
+      &:nth-of-type(7){
+        &>span{
+          animation: line-7 3s linear infinite alternate;
+        }
+      }
       & > span {
         width: 2px;
         height: 44px;
@@ -37,7 +74,8 @@
         top: 0;
         left: 0;
         background: #222222;
-        animation: pulsate 1.3s ease-in-out infinite;
+
+
       }
     }
   }

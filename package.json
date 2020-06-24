@@ -14,6 +14,7 @@
     "gulp-sass": "^4.0.2",
     "bootstrap": "4.2.1",
     "normalize.scss": "^0.1.0",
-    "swiper": "^4.4.6"
+    "swiper": "^4.4.6",
+    "simple-parallax-js": "^5.5.1"
   }
 }
