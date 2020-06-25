@@ -1,3 +1,4 @@
+import './slider.js';
 if (document.querySelector('.main-banner__slider')) {
     new Swiper('.main-banner__slider .swiper-container', {
         loop: true,
