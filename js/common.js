@@ -21,8 +21,6 @@ event('.header .burger', 'click', function (e) {
     document.querySelectorAll('.overlayout').forEach((el) => {
         toggleClass(el, 'active');
     });
-
-
 });
 
 window.addEventListener('resize', function () {
@@ -40,10 +38,25 @@ if (document.querySelector('.header')) {
         if (!isClickInside && menu.classList.contains('vis')) {
             menuBtn.querySelector('.burger').click();
         }
-
-
     });
 }
+
+event('.header__lng', 'click', function (e) {
+    toggleClass(document.querySelector('.header__lng-list'), 'active');
+});
+
+
+if (document.querySelector('.header__lng')) {
+    document.addEventListener('click', function (event) {
+        let menu = document.querySelector('.header__lng-list');
+        let menuBtn = document.querySelector('.header__lng');
+        let isClickInside = menuBtn.contains(event.target);
+        if (!isClickInside && menu.classList.contains('vis')) {
+            menuBtn.querySelector('.header__lng').click();
+        }
+    });
+}
+
 
 // // window.matchMedia("(max-width: 949px)").matches ||
 // window.addEventListener('resize', function () {
