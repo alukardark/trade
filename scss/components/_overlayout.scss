@@ -1,0 +1,9 @@
+.overlayout{
+  transition: .3s ease-in-out all;
+
+  &.active{
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    pointer-events: none;
+  }
+}

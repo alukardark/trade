@@ -8,6 +8,7 @@
 
 
 // 2. Vendors
+@import "node_modules/swiper/dist/css/swiper";
 @import "node_modules/normalize.scss/normalize";
 @import "vendors/bootstrap";
 @import "node_modules/bootstrap/scss/bootstrap";
@@ -25,9 +26,10 @@
 'layout/main-banner';
 
 // 5. Components
-//@import
+@import
 //'components/checkbox-list',
-//'components/burger',
+'components/burger',
+'components/overlayout';
 //'components/hamburger',
 //'components/modal',
 //'components/link-footer',

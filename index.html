@@ -17,25 +17,41 @@
 <div class="header">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12 position-static">
 
                 <div class="header__row">
                     <a href="/" class="header__logo"></a>
 
-                    <ul class="header__nav">
+                    <ul class="header__nav d-none d-lg-flex">
                         <li><a href="#">Conditions</a></li>
                         <li><a href="#">Platforms</a></li>
                         <li><a href="#">Refer</a></li>
                         <li><a href="#">Deposit & Withdraw</a></li>
                         <li><a href="#">About Us</a></li>
                         <li><a href="#">FAQ</a></li>
-
                     </ul>
 
+                    <div class="header__mobile-menu d-lg-none">
+                        <div class="header__lng d-sm-none">en</div>
+                        <ul class="header__nav">
+                            <li><a href="#">Conditions</a></li>
+                            <li><a href="#">Platforms</a></li>
+                            <li><a href="#">Refer</a></li>
+                            <li><a href="#">Deposit & Withdraw</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                        <a href="#" class="header__login d-sm-none">Log in</a>
+                        <a href="#" class="header__register d-sm-none">Register</a>
+                    </div>
+
                     <div class="header__profile">
-                        <div class="header__lng">en</div>
-                        <a href="#" class="header__login">Log in</a>
-                        <a href="#" class="header__register">Register</a>
+                        <div class="header__lng d-none d-sm-flex">en</div>
+                        <a href="#" class="header__login d-none d-sm-flex">Log in</a>
+                        <a href="#" class="header__register d-none d-sm-flex">Register</a>
+                        <div class="burger">
+                            <span></span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -43,45 +59,166 @@
     </div>
 </div>
 
-<div class="main-banner">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
+<div class="overlayout">
+    <div class="main-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
 
-                <div class="main-banner__animation">
-                    <div class="main-banner__lines">
-                        <div><span></span></div>
-                        <div><span></span></div>
-                        <div><span></span></div>
-                        <div><span></span></div>
-                        <div><span></span></div>
-                        <div><span></span></div>
-                        <div><span></span></div>
+                    <div class="main-banner__animation">
+                        <div class="main-banner__lines">
+                            <div><span></span></div>
+                            <div><span></span></div>
+                            <div><span></span></div>
+                            <div></div>
+                            <div><span></span></div>
+                            <div><span></span></div>
+                            <div><span></span></div>
+                        </div>
                     </div>
+
+
+                    <div class="main-banner__slider ">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="main-banner__slide swiper-slide">
+                                    <div class="main-banner__info">
+                                        <h1>Bitcoin platform for <span>active trading</span></h1>
+
+                                        <div class="main-banner__text">
+                                            <div class="main-banner__desc">
+                                                Mathanga Maya Arulpragasam, better known as M.I.A. - British singer of
+                                                Tamil
+                                                descent, songwriter who
+                                                also produces recordings by other artists, makes video clips and acts as
+                                                an
+                                                artist
+                                                and designer
+                                            </div>
+                                            <a href="#" class="main-banner__btn">open account</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="main-banner__slide swiper-slide">
+                                    <div class="main-banner__info main-banner__info--center">
+
+
+                                        <div class="main-banner__text main-banner__text--collumn">
+                                            <h1>MetaTrader 5</h1>
+                                            <div class="main-banner__desc main-banner__desc--marker-red">
+                                                Carrying on its predecessor’s impressive reputation, the Chaos Trade MT5
+                                                trading
+                                                platform provides you with everything you need to trade the financial
+                                                markets.
+                                                MT5 is easy to use and fully customisable to suit your trading style.
+                                            </div>
+                                            <a href="#" class="main-banner__btn">TRADE</a>
+                                        </div>
+
+
+                                        <div class="main-banner__img-wrap">
+                                            <div class="main-banner__img main-banner__img--1"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="main-banner__slide swiper-slide">
+                                    <div class="main-banner__info main-banner__info--center">
+
+
+                                        <div class="main-banner__text main-banner__text--collumn">
+                                            <h1>USDt stable safe secure</h1>
+                                            <div class="main-banner__desc main-banner__desc--marker-red">
+                                                Carrying on its predecessor’s impressive reputation, the Chaos Trade MT5
+                                                trading
+                                                platform provides you with everything you need to trade the financial
+                                                markets.
+                                            </div>
+                                            <a href="#" class="main-banner__btn">Learn More</a>
+                                        </div>
+                                        <div class="main-banner__img-wrap">
+                                            <div class="main-banner__img main-banner__img--2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="main-banner__slide swiper-slide">
+                                    <div class="main-banner__info main-banner__info--center">
+
+
+                                        <div class="main-banner__text main-banner__text--collumn">
+                                            <h1>Choose your
+                                                trading style</h1>
+                                            <div class="main-banner__desc main-banner__desc--marker-red">
+                                                We offer our customers the opportunity to choose the type of account
+                                                based on
+                                                their strategy and risk management. That is why the platform is suitable
+                                                both
+                                                for active traders and for long-term investment.
+                                            </div>
+                                            <a href="#" class="main-banner__btn">TRADE</a>
+                                        </div>
+                                        <div class="main-banner__img-wrap">
+                                            <div class="main-banner__img main-banner__img--3"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="main-banner__slide swiper-slide">
+                                    <div class="main-banner__info main-banner__info--center">
+
+
+                                        <div class="main-banner__text main-banner__text--collumn">
+                                            <h1>Crypto & Forex </h1>
+                                            <div class="main-banner__desc main-banner__desc--marker-red">
+                                                Carrying on its predecessor’s impressive reputation, the Chaos Trade MT5
+                                                trading
+                                                platform provides you with everything you need to trade the financial
+                                                markets.
+                                                MT5 is easy to use and fully customisable to suit your trading style.
+                                            </div>
+                                            <a href="#" class="main-banner__btn">TRADE</a>
+                                        </div>
+                                        <div class="main-banner__img-wrap">
+                                            <div class="main-banner__img main-banner__img--4"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="main-banner__arrows">
+                            <div class="swiper-button-prev main-banner__prev">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="swiper-button-next main-banner__next">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <img class="parallax" src="img/chess-1.png" style="
+                width: 150px;
+                height: 200px;">
                 </div>
-
-                <div class="main-banner__info">
-                    <h1>Bitcoin platform for <span>active trading</span></h1>
-
-                   <div class="main-banner__text">
-                       <div class="main-banner__desc">
-                           Mathanga Maya Arulpragasam, better known as M.I.A. - British singer of Tamil descent, songwriter who
-                           also produces recordings by other artists, makes video clips and acts as an artist and designer
-                       </div>
-                       <a href="#" class="main-banner__btn">open account</a>
-                   </div>
-                </div>
-
-                <img class="thumbnail" src="img/chess-1.png">
             </div>
         </div>
     </div>
 </div>
-
 
 <div style="height: 2000px; background: gray"></div>
 
 
-<script type="module"  src="js/common.js"></script>
+<script src="js/libs.min.js"></script>
+<script type="module" src="js/common.js"></script>
 </body>
 </html>
