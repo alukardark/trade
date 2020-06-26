@@ -36,6 +36,16 @@
       background-image: url(../img/advantage-2-5.svg);
     }
 
+    &--3-1 {
+      background-image: url(../img/advantage-3-1.svg);
+    }
+    &--3-2 {
+      background-image: url(../img/advantage-3-2.svg);
+    }
+    &--3-3 {
+      background-image: url(../img/advantage-3-3.svg);
+    }
+
   }
   &__title {
     font-weight: 500;
@@ -102,6 +112,32 @@
         min-height: 70px;
       }
     }
+    &--arrows{
+      .advantages__img{
+        position: relative;
+        &:after{
+          content: '';
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          right: -110px;
+          width: 48px;
+          height: 19px;
+          background: url(../img/arrow-r-big-red.png);
+        }
+
+      }
+      li{
+        &:last-of-type{
+          .advantages__img{
+            &:after{
+              display: none;
+            }
+          }
+
+        }
+      }
+    }
   }
 }
 
@@ -144,6 +180,21 @@
         flex-direction: row;
         margin-bottom: 30px;
         align-items: flex-start;
+      }
+
+      &--arrows{
+        li{
+          align-items: center;
+          div{
+            margin-bottom: 0;
+          }
+        }
+        .advantages__img{
+          &:after{
+            display: none;
+          }
+
+        }
       }
     }
   }

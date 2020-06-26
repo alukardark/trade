@@ -1,0 +1,23 @@
+.how-started{
+  h2{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+  }
+  &__btn{
+    width: 222px;
+    height: 58px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #B01D1E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -1,0 +1,40 @@
+.advantages-numbers{
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__col{
+      width: 175px;
+    div {
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 125.9%;
+      text-transform: uppercase;
+      color: #000000;
+      margin-bottom: 6px;
+    }
+    p {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 174.9%;
+      color: #939393;
+    }
+  }
+}
+
+
+@media (max-width: $md){
+  .advantages-numbers{
+    &__col {
+      width: 45%;
+      div {
+        font-size: 22px;
+        line-height: 125.9%;
+      }
+      p {
+        font-size: 13px;
+      }
+    }
+  }
+}
