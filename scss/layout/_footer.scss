@@ -13,11 +13,10 @@
   &__logo {
     background: url(../img/logo-m.svg) center left/contain no-repeat;
     display: block;
-    margin-right: 40px;
     margin-top: 9px;
-
     min-width: 30px;
     height: 30px;
+    margin-right: 60px;
   }
   &__nav {
     display: flex;
@@ -229,22 +228,22 @@
     &__mobile-menu {
       background: red;
       background: #FFFFFF;
-      box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.15);
+      box-shadow: 0px -20px 20px 0px rgba(0,0,0,0.15);
       position: absolute;
-      top: 100%;
+      bottom: 100%;
       left: 0;
       width: 100%;
       padding-left: 15px;
       padding-right: 15px;
-      padding-top: 10px;
-      padding-bottom: 45px;
+      padding-top: 30px;
+      padding-bottom: 25px;
       z-index: 25;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       opacity: 0;
       visibility: hidden;
-      transform: translateY(-15px);
+      transform: translateY(15px);
       transition: .3s ease-in-out visibility, .3s ease-in-out opacity, .3s ease-in-out transform;
       &.vis {
         transform: translateY(0);
@@ -274,22 +273,25 @@
   .footer {
     padding-top: 25px;
     padding-bottom: 25px;
-    position: static;
     &__logo {
       margin-top: -10px;
       background-image: url(../img/logo-m.svg);
       background-position: left;
       min-width: 30px;
       height: 30px;
+      margin-right: 40px;
     }
     &__profile {
       min-width: auto;
       min-width: 190px;
     }
     &__mobile-menu{
-      top: 72px;
-      bottom: 0;
-      transform: translateY(-20px);
+      top: auto;
+      bottom: 72px;
+      transform: translateY(20px);
+      height: auto;
+      position: absolute;
+      justify-content: flex-end;
     }
     &__nav {
       margin-top: 45px;
