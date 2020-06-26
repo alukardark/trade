@@ -5,6 +5,9 @@
   margin-right: auto;
   padding-bottom: 35px;
   position: relative;
+  z-index: 1;
+  -webkit-animation-fill-mode: none;
+  animation-fill-mode: none;
   .container {
 
   }

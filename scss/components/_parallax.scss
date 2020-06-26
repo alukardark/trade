@@ -1,10 +1,11 @@
 .parallax {
   position: absolute;
-  &--1 {
+  opacity: 0;
+  transition: .6s ease-in-out opacity .6s;
+  &--0 {
     display: none;
-    top: 120px;
+    top: 175px;
     right: 0;
-    width: 68px;
     height: 128px;
   }
   &--05 {
@@ -13,16 +14,73 @@
     right: 0;
     height: 135px;
   }
+
+  &--2 {
+    top: -100px;
+    left: 0;
+    height: 200px;
+  }
+  &--6 {
+    top: 72px;
+    right: -100px;
+    height: 388px;
+  }
+  &--3 {
+    bottom: -90px;
+    left: -180px;
+    height: 252px;
+  }
+  &--4 {
+    height: 247px;
+    bottom: -50px;
+    right: 0px;
+  }
+  &.vis{
+    opacity: 1;
+  }
+}
+
+@media (max-width: $xl) {
+  .parallax {
+    &--6 {
+      height: 250px;
+      right: -115px;
+    }
+
+    &--3 {
+      height: 200px;
+      left: -70px;
+    }
+  }
+}
+@media (max-width: $lg) {
+  .parallax {
+    &--2 {
+      left: -110px;
+    }
+    &--4 {
+      height: 210px;
+    }
+  }
 }
 
 @media (max-width: $md) {
   .parallax {
     position: absolute;
-    &--1 {
+    &--0 {
       display: block;
     }
     &--05 {
       display: block;
+    }
+    &--2 {
+      display: none;
+    }
+    &--6 {
+      display: none;
+    }
+    &--3{
+      display: none;
     }
   }
 }

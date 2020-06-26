@@ -1,0 +1,87 @@
+.download-platform {
+  h2{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 530px;
+    line-height: 1;
+  }
+  &__list {
+    display: flex;
+    justify-content: center;
+    li {
+      border-right: 0.5px solid #000000;
+      width: 200px;
+      &:last-of-type {
+        border-right: none;
+      }
+    }
+    a {
+      display: flex;
+      align-items: center;
+      height: 42px;
+      font-weight: 500;
+      font-size: 16px;
+      justify-content: center;
+      i {
+        margin-right: 20px;
+        display: block;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        height: 39px;
+        transition: .2s ease-in-out all;
+      }
+      &:hover {
+        color: #B01D1E;
+      }
+    }
+  }
+  &--windows {
+    i {
+      width: 32px;
+      background-image: url(../img/win.svg);
+    }
+    &:hover {
+      i {
+        background-image: url(../img/win-red.svg);
+      }
+    }
+  }
+  &--ios {
+    i {
+      width: 39px;
+      background-image: url(../img/ios.svg);
+
+    }
+    &:hover {
+      i {
+        background-image: url(../img/ios-red.svg);
+      }
+    }
+  }
+  &--android {
+    i {
+      width: 42px;
+      background-image: url(../img/android.svg);
+
+    }
+    &:hover {
+      a {
+        background-image: url(../img/android-red.svg);
+      }
+    }
+  }
+  &--web {
+    i {
+      width: 36px;
+      background-image: url(../img/web.svg);
+
+    }
+    &:hover {
+      i {
+        background-image: url(../img/web-red.svg);
+      }
+    }
+  }
+}

@@ -6,7 +6,7 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    line-height: 119.9%;
+    line-height: 1;
     margin-bottom: 70px;
     font-size: 70px;
     span {
@@ -83,6 +83,9 @@
       justify-content: center;
       display: flex;
     }
+    &--inner{
+      margin-top: 100px;
+    }
   }
   &__text {
     display: flex;
@@ -95,7 +98,7 @@
         margin-left: 0;
         margin-right: 0;
         margin-bottom: 45px;
-        line-height: 109.9%;
+        line-height: 1;
         max-width: 510px;
       }
       .main-banner__btn {
@@ -130,7 +133,7 @@
     background: #B01D1E;
     font-weight: 500;
     font-size: 14px;
-    line-height: 155.9%;
+    line-height: 125.9%;
     text-align: center;
     text-transform: uppercase;
     display: flex;
@@ -183,6 +186,12 @@
       height: 179px;
       margin-top: 15px;
       background-image: url(../img/main-banner-4.png);
+    }
+
+    &--metatrader{
+      width: 381px;
+      height: 463px;
+      background-image: url(../img/metatrader.png);
     }
   }
 
@@ -246,9 +255,8 @@
       transition: .3s ease-in-out all;
     }
     &:hover {
-
       &:after {
-        transform: rotate(-45deg) translate(70%, -63%);
+        //transform: rotate(-45deg) translate(70%, -63%);
       }
       span {
         &:nth-of-type(1) {
@@ -318,7 +326,7 @@
     }
     &:hover {
       &:after {
-        transform: rotate(135deg) translate(30%, 63%);
+        //transform: rotate(135deg) translate(30%, 63%);
       }
       span {
         &:nth-of-type(2) {
@@ -330,6 +338,7 @@
       }
     }
   }
+
 }
 
 @media (max-width: $xl) {
@@ -337,9 +346,7 @@
     &__animation {
       height: 550px;
     }
-    &__info {
-      margin-top: 135px;
-    }
+
     &__lines {
       & > div {
         &:nth-of-type(1) {
@@ -400,6 +407,16 @@
         height: 170px;
       }
     }
+
+    &__info {
+      margin-top: 135px;
+      &--inner{
+        margin-top: 80px;
+        h2{
+          font-size: 70px;
+        }
+      }
+    }
   }
 }
 
@@ -441,6 +458,19 @@
         width: 225px;
         height: 170px;
       }
+
+      &--metatrader{
+        width: 225px;
+        height: 300px;
+      }
+    }
+    &__info{
+      &--inner{
+        justify-content: space-between;
+        h2{
+          font-size: 60px;
+        }
+      }
     }
   }
 }
@@ -451,9 +481,7 @@
       font-size: 40px;
       margin-bottom: 30px;
     }
-    &__info{
-      margin-top: 60px;
-    }
+
     &__arrows {
       display: none;
     }
@@ -482,6 +510,14 @@
     }
     &__animation {
       display: none;
+    }
+    &__info{
+      margin-top: 60px;
+      &--inner{
+        h2{
+          font-size: 40px;
+        }
+      }
     }
   }
 }

@@ -2,13 +2,10 @@ import {event, toggleClass} from './functions.js';
 import './slider.js';
 import './burger.js';
 import './lng-btn.js';
+import './parallax.js';
 
-new simpleParallax(document.querySelectorAll('.parallax'), {
-    delay: 0,
-    orientation: 'down',
-    scale: 1.8,
-    overflow: true,
-});
+
+
 
 new WOW().init({
     mobile: false,
@@ -24,4 +21,8 @@ if (navigator.userAgent.match(/(iPad|iPhone|iPod|Android|Silk)/gi)) {
    }, 300);
 }
 
+
+document.querySelectorAll('.parallax').forEach(el => {
+    el.classList.add('vis');
+});
 

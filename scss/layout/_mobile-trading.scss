@@ -1,4 +1,5 @@
 .mobile-trading {
+  margin-bottom: 145px;
   h2 {
     margin-bottom: 20px;
   }
@@ -96,8 +97,8 @@
       width: 12px;
       height: 15px;
     }
-    &:hover{
-      i{
+    &:hover {
+      i {
         background-image: url(../img/apple-white.svg);
       }
     }
@@ -108,18 +109,49 @@
       width: 10px;
       height: 14px;
     }
-    &:hover{
-      i{
+    &:hover {
+      i {
         background-image: url(../img/google-play-white.svg);
       }
     }
   }
 }
 
+@media (max-width: $xl) {
+  .mobile-trading {
+    margin-bottom: 115px;
+  }
+}
+
 @media (max-width: $md) {
   .mobile-trading {
+    margin-bottom: 40px;
+    h2{
+      text-align: center;
+    }
     p {
       padding-left: 25px;
+    }
+    &__img {
+      background: url(../img/mobile-trading-2.png) center/contain no-repeat;
+      max-width: 315px;
+      width: 100%;
+      height: 190px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &__row {
+      flex-direction: column;
+      border-bottom: 1px solid #E0E0E0;
+      padding-bottom: 50px;
+    }
+    &__btns {
+      max-width: 100%;
+      flex-direction: column;
+      a{
+        width: 100%;
+        margin-bottom: 14px;
+      }
     }
   }
 }
