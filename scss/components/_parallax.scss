@@ -1,0 +1,28 @@
+.parallax {
+  position: absolute;
+  &--1 {
+    display: none;
+    top: 120px;
+    right: 0;
+    width: 68px;
+    height: 128px;
+  }
+  &--05 {
+    display: none;
+    bottom: -55px;
+    right: 0;
+    height: 135px;
+  }
+}
+
+@media (max-width: $md) {
+  .parallax {
+    position: absolute;
+    &--1 {
+      display: block;
+    }
+    &--05 {
+      display: block;
+    }
+  }
+}

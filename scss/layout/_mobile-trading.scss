@@ -1,0 +1,125 @@
+.mobile-trading {
+  h2 {
+    margin-bottom: 20px;
+  }
+  &__row {
+    justify-content: space-between;
+    max-width: 825px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__img {
+    background: url(../img/mobile-trading.png) center/contain no-repeat;
+    width: 233px;
+    height: 402px;
+  }
+  &__col {
+    max-width: 450px;
+  }
+  p {
+    position: relative;
+    padding-left: 35px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 184.9%;
+    margin-bottom: 35px;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: 3px;
+      width: 6px;
+      height: 6px;
+      background: #B01D1E;
+      transform: rotate(45deg);
+    }
+    strong {
+      font-weight: inherit;
+      color: #B01D1E;
+    }
+  }
+  &__btns {
+    display: flex;
+    justify-content: space-between;
+    max-width: 360px;
+    a {
+      width: 164px;
+      height: 51px;
+      border: 1px solid #3A3A3A;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 1;
+      text-transform: uppercase;
+      color: #040404;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 2px;
+      position: relative;
+      &:before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: #B01D1E;
+        z-index: -1;
+        margin-right: -10px;
+        margin-top: 10px;
+        transition: all 0.2s ease-in;
+        opacity: 0;
+      }
+      &:hover {
+        border-color: #B01D1E;
+        color: #fff;
+        &:before {
+          opacity: 1;
+          margin: 0;
+        }
+      }
+      i {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        margin-right: 14px;
+        margin-top: -3px;
+        transition: .2s ease-in-out all;
+      }
+    }
+  }
+  &__apple {
+    i {
+      background-image: url(../img/apple.svg);
+      width: 12px;
+      height: 15px;
+    }
+    &:hover{
+      i{
+        background-image: url(../img/apple-white.svg);
+      }
+    }
+  }
+  &__google-play {
+    i {
+      background-image: url(../img/google-play.svg);
+      width: 10px;
+      height: 14px;
+    }
+    &:hover{
+      i{
+        background-image: url(../img/google-play-white.svg);
+      }
+    }
+  }
+}
+
+@media (max-width: $md) {
+  .mobile-trading {
+    p {
+      padding-left: 25px;
+    }
+  }
+}

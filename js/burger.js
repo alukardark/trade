@@ -13,6 +13,13 @@ event('.header .burger', 'click', function (e) {
     document.querySelectorAll('.overlayout').forEach((el) => {
         toggleClass(el, 'active');
     });
+
+
+
+    if(document.querySelector('.header__lng').classList.contains('active')){
+    }
+
+
 });
 
 window.addEventListener('resize', function () {

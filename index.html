@@ -9,6 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/favicon.png">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css">-->
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -32,14 +33,6 @@
                     </ul>
 
                     <div class="header__mobile-menu d-lg-none">
-                        <div class="header__lng d-sm-none">
-                           <div class="header__lng--current">en</div>
-
-                            <ul class="header__lng-list">
-                                <li><a href="#">ru</a></li>
-                                <li><a href="#">uk</a></li>
-                            </ul>
-                        </div>
                         <ul class="header__nav">
                             <li><a href="#">Conditions</a></li>
                             <li><a href="#">Platforms</a></li>
@@ -48,12 +41,11 @@
                             <li><a href="#">About Us</a></li>
                             <li><a href="#">FAQ</a></li>
                         </ul>
-                        <a href="#" class="header__login d-sm-none">Log in</a>
                         <a href="#" class="header__register d-sm-none">Register</a>
                     </div>
 
                     <div class="header__profile">
-                        <div class="header__lng d-none d-sm-flex">
+                        <div class="header__lng">
                             <div class="header__lng--current">en</div>
 
                             <ul class="header__lng-list ">
@@ -61,7 +53,7 @@
                                 <li><a href="#">uk</a></li>
                             </ul>
                         </div>
-                        <a href="#" class="header__login d-none d-sm-flex">Log in</a>
+                        <a href="#" class="header__login">Log in</a>
                         <a href="#" class="header__register d-none d-sm-flex">Register</a>
                         <div class="burger">
                             <span></span>
@@ -79,6 +71,8 @@
             <div class="row">
                 <div class="col-md-12">
 
+                    <img class="parallax parallax--1" src="img/chess-0.png">
+
                     <div class="main-banner__animation">
                         <div class="main-banner__lines">
                             <div><span></span></div>
@@ -92,15 +86,28 @@
                     </div>
 
 
-                    <div class="main-banner__slider ">
+                    <div class="main-banner__slider">
                         <div class="swiper-container">
                             <div class="swiper-wrapper">
                                 <div class="main-banner__slide swiper-slide">
                                     <div class="main-banner__info">
-                                        <h1>Bitcoin platform for <span>active trading</span></h1>
+                                        <h1
+                                                data-swiper-animation="animate__fadeInDown"
+                                                data-duration="1.2s"
+                                                data-delay="0.3s"
+                                                data-swiper-out-animation="animate__fadeOutLeft"
+                                                data-out-duration="1.2s"
+
+                                        >Bitcoin platform for <span>active trading</span></h1>
 
                                         <div class="main-banner__text">
-                                            <div class="main-banner__desc">
+                                            <div class="main-banner__desc"
+                                                 data-swiper-animation="animate__fadeInLeft"
+                                                 data-duration="1.2s"
+                                                 data-delay=".6s"
+                                                 data-swiper-out-animation="animate__fadeOutLeft"
+                                                 data-out-duration="1.2s"
+                                            >
                                                 Mathanga Maya Arulpragasam, better known as M.I.A. - British singer of
                                                 Tamil
                                                 descent, songwriter who
@@ -109,7 +116,13 @@
                                                 artist
                                                 and designer
                                             </div>
-                                            <a href="#" class="main-banner__btn">open account</a>
+                                            <a href="#" class="main-banner__btn"
+                                               data-swiper-animation="animate__fadeIn"
+                                               data-duration="1.2s"
+                                               data-delay=".6s"
+                                               data-swiper-out-animation="animate__fadeOutLeft"
+                                               data-out-duration="1.2s"
+                                            >open account</a>
                                         </div>
                                     </div>
                                 </div>
@@ -119,19 +132,43 @@
 
 
                                         <div class="main-banner__text main-banner__text--collumn">
-                                            <h1>MetaTrader 5</h1>
-                                            <div class="main-banner__desc main-banner__desc--marker-red">
+                                            <h2
+                                                    data-swiper-animation="animate__fadeInDown"
+                                                    data-duration="1.2s"
+                                                    data-delay="0s"
+                                                    data-swiper-out-animation="animate__fadeOutLeft"
+                                                    data-out-duration="1.2s"
+                                            >MetaTrader 5</h2>
+                                            <div class="main-banner__desc"
+                                                 data-swiper-animation="animate__fadeInLeft"
+                                                 data-duration="1.2s"
+                                                 data-delay=".3s"
+                                                 data-swiper-out-animation="animate__fadeOutLeft"
+                                                 data-out-duration="1.2s"
+                                            >
                                                 Carrying on its predecessor’s impressive reputation, the Chaos Trade MT5
                                                 trading
                                                 platform provides you with everything you need to trade the financial
                                                 markets.
                                                 MT5 is easy to use and fully customisable to suit your trading style.
                                             </div>
-                                            <a href="#" class="main-banner__btn">TRADE</a>
+                                            <a href="#" class="main-banner__btn"
+                                               data-swiper-animation="animate__fadeIn"
+                                               data-duration="1.2s"
+                                               data-delay=".3s"
+                                               data-swiper-out-animation="animate__fadeOutLeft"
+                                               data-out-duration="1.2s"
+                                            >TRADE</a>
                                         </div>
 
 
-                                        <div class="main-banner__img-wrap">
+                                        <div class="main-banner__img-wrap"
+                                             data-swiper-animation="animate__fadeIn"
+                                             data-duration="1.0s"
+                                             data-delay=".3s"
+                                             data-swiper-out-animation="animate__fadeOutLeft"
+                                             data-out-duration="1.2s"
+                                        >
                                             <div class="main-banner__img main-banner__img--1"></div>
                                         </div>
                                     </div>
@@ -142,16 +179,39 @@
 
 
                                         <div class="main-banner__text main-banner__text--collumn">
-                                            <h1>USDt stable safe secure</h1>
-                                            <div class="main-banner__desc main-banner__desc--marker-red">
+                                            <h2
+                                                    data-swiper-animation="animate__fadeInDown"
+                                                    data-duration="1.2s"
+                                                    data-delay="0s"
+                                                    data-swiper-out-animation="animate__fadeOutLeft"
+                                                    data-out-duration="1.2s"
+                                            >USDt stable safe secure</h2>
+                                            <div class="main-banner__desc"
+                                                 data-swiper-animation="animate__fadeInLeft"
+                                                 data-duration="1.2s"
+                                                 data-delay=".3s"
+                                                 data-swiper-out-animation="animate__fadeOutLeft"
+                                                 data-out-duration="1.2s"
+                                            >
                                                 Carrying on its predecessor’s impressive reputation, the Chaos Trade MT5
                                                 trading
                                                 platform provides you with everything you need to trade the financial
                                                 markets.
                                             </div>
-                                            <a href="#" class="main-banner__btn">Learn More</a>
+                                            <a href="#" class="main-banner__btn"
+                                               data-swiper-animation="animate__fadeIn"
+                                               data-duration="1.2s"
+                                               data-delay=".3s"
+                                               data-swiper-out-animation="animate__fadeOutLeft"
+                                               data-out-duration="1.2s"
+                                            >Learn More</a>
                                         </div>
-                                        <div class="main-banner__img-wrap">
+                                        <div class="main-banner__img-wrap"
+                                             data-swiper-animation="animate__fadeIn"
+                                             data-duration="1.0s"
+                                             data-delay=".3s"
+                                             data-swiper-out-animation="animate__fadeOutLeft"
+                                             data-out-duration="1.2s">
                                             <div class="main-banner__img main-banner__img--2"></div>
                                         </div>
                                     </div>
@@ -162,18 +222,41 @@
 
 
                                         <div class="main-banner__text main-banner__text--collumn">
-                                            <h1>Choose your
-                                                trading style</h1>
-                                            <div class="main-banner__desc main-banner__desc--marker-red">
+                                            <h2
+                                                    data-swiper-animation="animate__fadeInDown"
+                                                    data-duration="1.2s"
+                                                    data-delay="0s"
+                                                    data-swiper-out-animation="animate__fadeOutLeft"
+                                                    data-out-duration="1.2s"
+                                            >Choose your
+                                                trading style</h2>
+                                            <div class="main-banner__desc"
+                                                 data-swiper-animation="animate__fadeInLeft"
+                                                 data-duration="1.2s"
+                                                 data-delay=".3s"
+                                                 data-swiper-out-animation="animate__fadeOutLeft"
+                                                 data-out-duration="1.2s"
+                                            >
                                                 We offer our customers the opportunity to choose the type of account
                                                 based on
                                                 their strategy and risk management. That is why the platform is suitable
                                                 both
                                                 for active traders and for long-term investment.
                                             </div>
-                                            <a href="#" class="main-banner__btn">TRADE</a>
+                                            <a href="#" class="main-banner__btn"
+                                               data-swiper-animation="animate__fadeIn"
+                                               data-duration="1.2s"
+                                               data-delay=".3s"
+                                               data-swiper-out-animation="animate__fadeOutLeft"
+                                               data-out-duration="1.2s"
+                                            >TRADE</a>
                                         </div>
-                                        <div class="main-banner__img-wrap">
+                                        <div class="main-banner__img-wrap"
+                                             data-swiper-animation="animate__fadeIn"
+                                             data-duration="1.0s"
+                                             data-delay=".3s"
+                                             data-swiper-out-animation="animate__fadeOutLeft"
+                                             data-out-duration="1.2s">
                                             <div class="main-banner__img main-banner__img--3"></div>
                                         </div>
                                     </div>
@@ -184,23 +267,45 @@
 
 
                                         <div class="main-banner__text main-banner__text--collumn">
-                                            <h1>Crypto & Forex </h1>
-                                            <div class="main-banner__desc main-banner__desc--marker-red">
+                                            <h2
+                                                    data-swiper-animation="animate__fadeInDown"
+                                                    data-duration="1.2s"
+                                                    data-delay="0s"
+                                                    data-swiper-out-animation="animate__fadeOutLeft"
+                                                    data-out-duration="1.2s"
+                                            >Crypto & Forex </h2>
+                                            <div class="main-banner__desc"
+                                                 data-swiper-animation="animate__fadeInLeft"
+                                                 data-duration="1.2s"
+                                                 data-delay=".3s"
+                                                 data-swiper-out-animation="animate__fadeOutLeft"
+                                                 data-out-duration="1.2s"
+                                            >
                                                 Carrying on its predecessor’s impressive reputation, the Chaos Trade MT5
                                                 trading
                                                 platform provides you with everything you need to trade the financial
                                                 markets.
                                                 MT5 is easy to use and fully customisable to suit your trading style.
                                             </div>
-                                            <a href="#" class="main-banner__btn">TRADE</a>
+                                            <a href="#" class="main-banner__btn"
+                                               data-swiper-animation="animate__fadeIn"
+                                               data-duration="1.2s"
+                                               data-delay=".3s"
+                                               data-swiper-out-animation="animate__fadeOutLeft"
+                                               data-out-duration="1.2s"
+                                            >TRADE</a>
                                         </div>
-                                        <div class="main-banner__img-wrap">
+                                        <div class="main-banner__img-wrap"
+                                             data-swiper-animation="animate__fadeIn"
+                                             data-duration="1.0s"
+                                             data-delay=".3s"
+                                             data-swiper-out-animation="animate__fadeOutLeft"
+                                             data-out-duration="1.2s">
                                             <div class="main-banner__img main-banner__img--4"></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
 
                         <div class="main-banner__arrows">
@@ -236,36 +341,45 @@
                     <ul class="advantages__list">
                         <li>
                             <div class="advantages__img advantages__img--1"></div>
-                            <div class="advantages__title">security</div>
-                            <div class="advantages__text">FA, multisig, Cold Storage, PGP-mailing
+                            <div class="advantages__wrap">
+                                <div class="advantages__title">security</div>
+                                <div class="advantages__text">FA, multisig, Cold Storage, PGP-mailing
+                                </div>
+                                <a href="#" class="advantages__link">more details</a>
                             </div>
-                            <a href="#" class="advantages__link">more details</a>
                         </li>
                         <li>
                             <div class="advantages__img advantages__img--2"></div>
-                            <div class="advantages__title">deposit & withdraw</div>
-                            <div class="advantages__text">Settlements on the platform are carried out through ERC-20 USDt
+                            <div class="advantages__wrap">
+                                <div class="advantages__title">deposit & withdraw</div>
+                                <div class="advantages__text">Settlements on the platform are carried out through ERC-20
+                                    USDt
+                                </div>
+                                <a href="#" class="advantages__link">more details</a>
                             </div>
-                            <a href="#" class="advantages__link">more details</a>
                         </li>
                         <li>
                             <div class="advantages__img advantages__img--3"></div>
-                            <div class="advantages__title">choose your leverage</div>
-                            <div class="advantages__text">Multipliers from x3 to x100 are available
+                            <div class="advantages__wrap">
+                                <div class="advantages__title">choose your leverage</div>
+                                <div class="advantages__text">Multipliers from x3 to x100 are available
+                                </div>
+                                <a href="#" class="advantages__link">more details</a>
                             </div>
-                            <a href="#" class="advantages__link">more details</a>
                         </li>
                         <li>
                             <div class="advantages__img advantages__img--4"></div>
-                            <div class="advantages__title">24/7 support</div>
-                            <div class="advantages__text">For the better trading improvements</div>
-                            <a href="#" class="advantages__link">more details</a>
+                            <div class="advantages__wrap">
+                                <div class="advantages__title">24/7 support</div>
+                                <div class="advantages__text">For the better trading improvements</div>
+                                <a href="#" class="advantages__link">more details</a>
+                            </div>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-
+        <img class="parallax parallax--05" src="img/chess-05.png">
     </div>
 
     <div class="platform">
@@ -273,8 +387,9 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="platform__row">
-                        <h2>MetaTrader 5 platform</h2>
-                        <p>Get immediate access to cryptocurrencies, stock indices, commodities and forex with a single bitcoin-based platform</p>
+                        <h2>MetaTrader 5 <span>platform</span></h2>
+                        <div class="platform__text">Get immediate access to cryptocurrencies, stock indices, commodities and forex with a single
+                            bitcoin-based platform</div>
                     </div>
 
                     <div class="platform__row">
@@ -284,25 +399,79 @@
                                 <div class="swiper-wrapper">
                                     <div class="platform__slide swiper-slide">
                                         <div class="platform__slide-col">
-                                            <strong>< 7,12 ms</strong>
-                                            <p>British singer of Tamil descent, songwriter.</p>
+                                            <div
+                                                    data-swiper-animation="animate__fadeInUp"
+                                                    data-duration="1.0s"
+                                                    data-delay=".3s"
+                                                    data-swiper-out-animation="animate__fadeOutUp"
+                                                    data-out-duration="1.2s"
+                                            >
+                                                < 7,12 ms</div>
+                                            <p
+                                                    data-swiper-animation="animate__fadeInUp"
+                                                    data-duration="1.0s"
+                                                    data-delay=".6s"
+                                                    data-swiper-out-animation="animate__fadeOutUp"
+                                                    data-out-duration="1.2s"
+                                            >
+                                                British singer of Tamil descent, songwriter.</p>
                                         </div>
                                         <div class="platform__slide-col">
-                                            <strong>375, 000,000</strong>
-                                            <p>British singer of Tamil descent, songwriter.</p>
+                                            <div
+                                                    data-swiper-animation="animate__fadeInUp"
+                                                    data-duration="1.0s"
+                                                    data-delay=".5s"
+                                                    data-swiper-out-animation="animate__fadeOutUp"
+                                                    data-out-duration="1.2s"
+                                            >375, 000,000</div>
+                                            <p
+                                                    data-swiper-animation="animate__fadeInUp"
+                                                    data-duration="1.0s"
+                                                    data-delay=".6s"
+                                                    data-swiper-out-animation="animate__fadeOutUp"
+                                                    data-out-duration="1.2s"
+                                            >British singer of Tamil descent, songwriter.</p>
                                         </div>
                                     </div>
 
                                     <div class="platform__slide swiper-slide">
                                         <div class="platform__slide-col">
-                                            <strong>< 7,12 ms</strong>
-                                            <p>British singer of Tamil descent, songwriter.</p>
+                                            <div
+                                                    data-swiper-animation="animate__fadeInUp"
+                                                    data-duration="1.0s"
+                                                    data-delay=".3s"
+                                                    data-swiper-out-animation="animate__fadeOutUp"
+                                                    data-out-duration="1.2s"
+                                            >
+                                                < 7,12 ms</div>
+                                            <p
+                                                    data-swiper-animation="animate__fadeInUp"
+                                                    data-duration="1.0s"
+                                                    data-delay=".6s"
+                                                    data-swiper-out-animation="animate__fadeOutUp"
+                                                    data-out-duration="1.2s"
+                                            >
+                                                British singer of Tamil descent, songwriter.</p>
                                         </div>
                                         <div class="platform__slide-col">
-                                            <strong>375, 000,000</strong>
-                                            <p>British singer of Tamil descent, songwriter.</p>
+                                            <div
+                                                    data-swiper-animation="animate__fadeInUp"
+                                                    data-duration="1.0s"
+                                                    data-delay=".5s"
+                                                    data-swiper-out-animation="animate__fadeOutUp"
+                                                    data-out-duration="1.2s"
+                                            >375, 000,000</div>
+                                            <p
+                                                    data-swiper-animation="animate__fadeInUp"
+                                                    data-duration="1.0s"
+                                                    data-delay=".6s"
+                                                    data-swiper-out-animation="animate__fadeOutUp"
+                                                    data-out-duration="1.2s"
+                                            >British singer of Tamil descent, songwriter.</p>
                                         </div>
                                     </div>
+
+
                                 </div>
 
                             </div>
@@ -338,7 +507,6 @@
                         Instrument
                     </div>
                     <div class="instrument__table">
-
 
 
                         <div class="instrument__column">
@@ -385,7 +553,7 @@
 
                         <div class="instrument__column">
                             <div class="instrument__cell">
-                                Indexes SIP
+                                Indexes
                             </div>
                             <div class="instrument__cell">
                                 SIP
@@ -432,6 +600,88 @@
 
         </div>
     </div>
+
+
+    <div class="why-company d-none d-md-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Why Chaos Trade?</h2>
+                    <ul class="advantages__list advantages__list--5">
+                        <li>
+                            <div class="advantages__img advantages__img--2-1"></div>
+                            <div class="advantages__wrap">
+                                <div class="advantages__title">low fees</div>
+                                <div class="advantages__text">Fees are the only things that we strive hard to keep low. We offer referral program to make.
+                                </div>
+                                <a href="#" class="advantages__link">more details</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="advantages__img advantages__img--2-2"></div>
+                            <div class="advantages__wrap">
+                                <div class="advantages__title">instant access
+                                </div>
+                                <div class="advantages__text">We maintain high quality services to give you instant access to all markets everywhere.
+                                </div>
+                                <a href="#" class="advantages__link">more details</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="advantages__img advantages__img--2-3"></div>
+                            <div class="advantages__wrap">
+                                <div class="advantages__title">market execution</div>
+                                <div class="advantages__text">We work with the most trustworthy multiply liquidity providers to ensure smooth pricing and low latency on all. </div>
+                                <a href="#" class="advantages__link">more details</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="advantages__img advantages__img--2-4"></div>
+                            <div class="advantages__wrap">
+                                <div class="advantages__title">reliable servers</div>
+                                <div class="advantages__text">Our services are executed at infrastructure of Amazon AWS servers.
+                                </div>
+                                <a href="#" class="advantages__link">more details</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="advantages__img advantages__img--2-5"></div>
+                            <div class="advantages__wrap">
+                                <div class="advantages__title">no KYC required</div>
+                                <div class="advantages__text">Our services are executed at infrastructure of Amazon AWS servers.
+                                </div>
+                                <a href="#" class="advantages__link">more details</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile-trading">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="mobile-trading__row">
+                        <div class="mobile-trading__img"></div>
+                        <div class="mobile-trading__col">
+                            <h2>Mobile trading for <span>ios and android</span></h2>
+                            <p><strong>Open a trading account</strong> and experience the benefits of mobile trading</p>
+
+                            <div class="mobile-trading__btns">
+                                <a href="#" class="mobile-trading__apple"><i></i>Apple store</a>
+                                <a href="#" class="mobile-trading__google-play"><i></i>Google play</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
 </div>
 

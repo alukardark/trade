@@ -33,3 +33,12 @@ h2{
     color: #B9B9B9;
   }
 }
+
+@media (max-width: $md) {
+  h1{
+    font-size: 40px;
+  }
+  h2{
+    font-size: 40px;
+  }
+}
