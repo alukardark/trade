@@ -1,6 +1,7 @@
 import {event, toggleClass} from "./functions.js";
 
 event('.header .burger', 'click', function (e) {
+
     e.preventDefault();
     toggleClass(this, 'active');
     if (window.matchMedia("(max-width: 949px)").matches) {
