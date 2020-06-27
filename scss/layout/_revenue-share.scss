@@ -2,10 +2,10 @@
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 250px;
   position: relative;
   padding: 0 100px;
-  &:before{
+  margin-bottom: 230px;
+  &:before {
     content: '';
     position: absolute;
     background: url(../img/frame.svg) center/contain no-repeat;
@@ -14,7 +14,7 @@
     top: 100%;
     left: 0;
   }
-  &:after{
+  &:after {
     content: '';
     position: absolute;
     background: url(../img/frame.svg) center/contain no-repeat;
@@ -32,7 +32,7 @@
   }
   h2 {
     margin-bottom: 30px;
-    strong{
+    strong {
       font-size: 80px;
       display: block;
     }
@@ -40,17 +40,7 @@
   p {
     position: relative;
     padding-left: 35px;
-    &:before {
-      content: '';
-      position: absolute;
-      top: 10px;
-      left: 3px;
-      width: 6px;
-      height: 6px;
-      background: #B01D1E;
-      transform: rotate(45deg);
-    }
-    strong{
+    strong {
       font-weight: inherit;
       color: #B01D1E;
     }
@@ -67,11 +57,21 @@
 
 @media (max-width: $lg) {
   .revenue-share {
-    margin-bottom: 140px;
-    &__img{
-      width: 330px;
-      min-width: 330px;
-      height: 225px;
+    margin-bottom: 160px;
+    padding: 0;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    &:before {
+      display: none;
+    }
+    &:after {
+      display: none;
+    }
+    &__img {
+      width: 173px;
+      min-width: 173px;
+      height: 241px;
     }
     &__col {
       max-width: 330px;
@@ -81,17 +81,43 @@
 
 @media (max-width: $md) {
   .revenue-share {
-    margin-bottom: 120px;
+    margin-bottom: 80px;
+    h2 {
+      strong {
+        display: none;
+      }
+    }
     P {
       font-size: 15px;
       padding-left: 25px;
+
     }
-    &__row{
+    &__row {
       flex-direction: column;
     }
-    &__img{
+    &__img {
       min-width: auto;
-      width: 100%;
+      margin-left: -165px;
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      height: 150px;
+      background-position: 10px 100%;
+      margin-bottom: 20px;
+      &:after {
+        content: '60%';
+        font-size: 70px;
+        line-height: 1;
+        display: block;
+        margin: 0;
+        font-family: "Times New Roman";
+        font-weight: bold;
+        width: 100%;
+        left: 140px;
+        position: relative;
+        top: 10px;
+      }
     }
   }
 }

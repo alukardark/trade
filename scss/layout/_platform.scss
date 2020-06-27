@@ -23,16 +23,6 @@
     padding-left: 35px;
     max-width: 420px;
     margin-top: 20px;
-    &:before {
-      content: '';
-      position: absolute;
-      top: 10px;
-      left: 3px;
-      width: 6px;
-      height: 6px;
-      background: #B01D1E;
-      transform: rotate(45deg);
-    }
   }
   &__img {
     width: 465px;

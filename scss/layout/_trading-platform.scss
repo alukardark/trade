@@ -15,16 +15,6 @@
   p {
     position: relative;
     padding-left: 35px;
-    &:before {
-      content: '';
-      position: absolute;
-      top: 10px;
-      left: 3px;
-      width: 6px;
-      height: 6px;
-      background: #B01D1E;
-      transform: rotate(45deg);
-    }
   }
   &__row {
     display: flex;

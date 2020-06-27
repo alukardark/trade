@@ -1,0 +1,38 @@
+.anyone-earn {
+  margin-bottom: 100px;
+  h2 {
+    text-align: center;
+    margin-bottom: 55px;
+  }
+  .advantages__list {
+    max-width: 900px;
+    li {
+      width: 30%;
+    }
+  }
+  .advantages__title {
+    font-weight: bold;
+  }
+}
+
+@media (max-width: $md) {
+  .anyone-earn {
+    margin-bottom: 20px;
+    .advantages__list {
+      li {
+        width: 47%;
+      }
+    }
+
+  }
+}
+@media (max-width: $sm) {
+  .anyone-earn {
+    .advantages__list {
+      li {
+        width: 100%;
+      }
+    }
+
+  }
+}

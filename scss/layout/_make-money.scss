@@ -1,5 +1,6 @@
 .make-money{
-  margin-bottom: 200px;
+  margin-bottom: 245px;
+  margin-top: 130px;
   h2{
     text-align: center;
     margin-left: auto;
@@ -32,9 +33,14 @@
   }
 }
 
+@media (max-width: $lg) {
+  .make-money{
+    margin-bottom: 180px;
+  }
+}
 @media (max-width: $md) {
   .make-money{
-    margin-bottom: 100px;
+    margin-bottom: 60px;
     h2{
       margin-bottom: 60px;
     }

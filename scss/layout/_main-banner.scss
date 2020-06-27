@@ -6,9 +6,9 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    line-height: 1;
     margin-bottom: 70px;
     font-size: 70px;
+    line-height: 1;
     span {
       color: #A9A9A9;
     }
@@ -114,16 +114,6 @@
     position: relative;
     margin-bottom: 35px;
     padding-left: 35px;
-    &:before {
-      content: '';
-      position: absolute;
-      top: 10px;
-      left: 3px;
-      width: 6px;
-      height: 6px;
-      background: #B01D1E;
-      transform: rotate(45deg)
-    }
     &--marker-red {
       &:before {
         background: #B01D1E;
@@ -343,6 +333,10 @@
   }
   &--referal{
     overflow: unset;
+    h1{
+      font-size: 78px;
+      line-height: 0.85;
+    }
   }
 
 
@@ -455,6 +449,7 @@
         margin-bottom: 30px;
         h2{
           font-size: 70px;
+          line-height: 1;
         }
       }
     }
