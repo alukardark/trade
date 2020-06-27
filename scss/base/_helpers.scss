@@ -13,12 +13,8 @@
 }
 
 .paragraph {
-  font-weight: 500;
-  line-height: 184.9%;
-  font-size: 16px;
   position: relative;
   padding-left: 35px;
-  max-width: 420px;
   strong{
     font-weight: inherit;
     color: #B01D1E;
@@ -33,6 +29,9 @@
     background: #B01D1E;
     transform: rotate(45deg);
   }
+}
+.big-text{
+  font-size: 22px;
 }
 
 @-webkit-keyframes tape {
@@ -60,4 +59,8 @@
     padding-left: 25px;
     margin-top: 25px;
   }
+  .big-text{
+    font-size: 18px !important;
+  }
+
 }
