@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Times New Roman';
+    src: url('TimesNewRomanPS-BoldMT.eot');
+    src: url('TimesNewRomanPS-BoldMT.eot?#iefix') format('embedded-opentype'),
+        url('TimesNewRomanPS-BoldMT.woff2') format('woff2'),
+        url('TimesNewRomanPS-BoldMT.woff') format('woff'),
+        url('TimesNewRomanPS-BoldMT.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
