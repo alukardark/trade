@@ -13,6 +13,11 @@ if (document.querySelector('.main-banner__slider')) {
         fadeEffect: {
             crossFade: true
         },
+        pagination: {
+            el: '.main-banner .swiper-pagination',
+            type: 'bullets',
+            clickable: true,
+        },
         navigation: {
             nextEl: '.main-banner__next',
             prevEl: '.main-banner__prev',

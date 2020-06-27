@@ -45,6 +45,21 @@
       &:hover {
         color: #B01D1E;
       }
+      &.active{
+        color: #B01D1E;
+        position: relative;
+        padding-left: 5px;
+        &:before{
+          content: '';
+          position: absolute;
+          top: 6px;
+          left: -10px;
+          width: 6px;
+          height: 6px;
+          background: #B01D1E;
+          transform: rotate(45deg);
+        }
+      }
     }
   }
 

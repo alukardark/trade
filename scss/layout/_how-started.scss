@@ -1,9 +1,11 @@
 .how-started{
+  margin-bottom: 200px;
   h2{
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     max-width: 500px;
+    margin-bottom: 85px;
   }
   &__btn{
     width: 222px;
@@ -19,5 +21,35 @@
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 60px;
+    transition: .2s ease-in-out all;
+    border: 1px solid transparent;
+    &:hover{
+      border-color: #3A3A3A;
+      color: #040404;
+      background: transparent;
+    }
+  }
+}
+
+@media (max-width: $md) {
+  .how-started{
+    margin-bottom: 100px;
+    h2{
+      margin-bottom: 60px;
+    }
+    &__btn{
+      margin-top: 35px;
+    }
+  }
+}
+@media (max-width: $sm) {
+  .how-started{
+    h2{
+      margin-bottom: 50px;
+    }
+    &__btn{
+      margin-top: 25px;
+    }
   }
 }

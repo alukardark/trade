@@ -39,6 +39,21 @@
       &:hover {
         color: #B01D1E;
       }
+      &.active{
+        color: #B01D1E;
+        position: relative;
+        padding-left: 5px;
+        &:before{
+          content: '';
+          position: absolute;
+          top: 6px;
+          left: -10px;
+          width: 6px;
+          height: 6px;
+          background: #B01D1E;
+          transform: rotate(45deg);
+        }
+      }
     }
   }
 
@@ -296,6 +311,13 @@
   &__flex-wrap {
     display: flex;
   }
+
+  &--line{
+    .footer__row{
+      border-top: 1px solid #EAEAEA;
+      padding-top: 50px;
+    }
+  }
 }
 
 @media (max-width: $xl) {
@@ -316,7 +338,7 @@
       background: #FFFFFF;
       box-shadow: 0px -20px 20px 0px rgba(0, 0, 0, 0.15);
       position: absolute;
-      bottom: 100%;
+      bottom: 99%;
       left: 0;
       width: 100%;
       padding-left: 15px;
@@ -399,6 +421,7 @@
       height: auto;
       position: absolute;
       justify-content: flex-end;
+      bottom: 98%;
     }
     &__nav {
       margin-top: 45px;

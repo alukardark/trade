@@ -1,17 +1,21 @@
-.trading-platform{
-  &__img{
+.trading-platform {
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 250px;
+  &__img {
     width: 401px;
     min-width: 401px;
     height: 275px;
     background: url(../img/trading-platform.png) center/contain no-repeat;
   }
-  h2{
-
+  h2 {
+    margin-bottom: 30px;
   }
-  p{
+  p {
     position: relative;
     padding-left: 35px;
-    &:before{
+    &:before {
       content: '';
       position: absolute;
       top: 10px;
@@ -22,21 +26,43 @@
       transform: rotate(45deg);
     }
   }
-  &__row{
+  &__row {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  &__col{
+  &__col {
     max-width: 415px;
   }
 }
 
-@media (max-width: $md){
-  .trading-platform{
-  P{
+@media (max-width: $lg) {
+  .trading-platform {
+    margin-bottom: 140px;
+    &__img{
+      width: 330px;
+      min-width: 330px;
+      height: 225px;
+    }
+    &__col {
+      max-width: 330px;
+    }
+  }
+}
+
+@media (max-width: $md) {
+  .trading-platform {
+    margin-bottom: 120px;
+    P {
       font-size: 15px;
       padding-left: 25px;
+    }
+    &__row{
+      flex-direction: column;
+    }
+    &__img{
+      min-width: auto;
+      width: 100%;
     }
   }
 }

@@ -1,8 +1,11 @@
 .advantages-numbers{
-
+  margin-bottom: 100px;
   &__row {
     display: flex;
     justify-content: space-between;
+    max-width: 770px;
+    margin-left: auto;
+    margin-right: auto;
   }
   &__col{
       width: 175px;
@@ -26,15 +29,26 @@
 
 @media (max-width: $md){
   .advantages-numbers{
+    margin-bottom: 50px;
+    &__row{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
     &__col {
-      width: 45%;
+      width: 160px;
+      margin-bottom: 40px;
+      &:last-of-type{
+        margin-bottom: 0;
+      }
       div {
-        font-size: 22px;
-        line-height: 125.9%;
+        text-align: center;
+        //font-size: 22px;
+        //line-height: 125.9%;
       }
-      p {
-        font-size: 13px;
-      }
+      //p {
+      //  font-size: 13px;
+      //}
     }
   }
 }

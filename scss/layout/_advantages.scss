@@ -99,6 +99,9 @@
       width: 22%;
     }
 
+    &--3{
+      max-width: 865px;
+    }
     &--5{
       flex-wrap: wrap;
       justify-content: center;
@@ -120,7 +123,7 @@
           position: absolute;
           top: 50%;
           transform: translateY(-50%);
-          right: -110px;
+          right: -143px;
           width: 48px;
           height: 19px;
           background: url(../img/arrow-r-big-red.png);
@@ -141,6 +144,18 @@
   }
 }
 
+@media (max-width: $lg) {
+  .advantages {
+    &__list{
+      .advantages__img{
+        &:after{
+          right: -113px;
+        }
+      }
+    }
+  }
+
+}
 @media (max-width: $md) {
   .advantages {
     margin-bottom: 70px;
