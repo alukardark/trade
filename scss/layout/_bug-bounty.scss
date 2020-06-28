@@ -1,0 +1,154 @@
+.bug-bounty {
+  padding-top: 80px;
+  max-width: 1050px;
+  margin-left: auto;
+  margin-right: auto;
+  h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+    & + p {
+      margin-bottom: 50px;
+      max-width: 660px;
+    }
+  }
+  p {
+    margin-bottom: 10px;
+    font-weight: 500;
+    &.min-text{
+      font-size: 16px;
+      margin-bottom: 40px;
+    }
+    strong{
+      color: #000;
+      font-weight: bold;
+      font-size: 16px;
+      max-width: 300px;
+      display: block;
+    }
+  }
+  ol {
+    font-weight: 500;
+  }
+  &__img {
+    float: right;
+    margin-top: -120px;
+    max-width: 220px;
+    width: 100% ;
+  }
+
+  &__attention{
+    margin: 55px 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    color: #000000;
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    padding: 20px 35px;
+  }
+  &__table{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+  }
+
+  &__row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    border-bottom: 1px solid #C5C5C5;
+    height: 70px;
+    padding: 0 15px;
+    i{
+      margin-right: 22px;
+      width: 35px;
+      height: 35px;
+      font-weight: 500;
+      font-size: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-style: normal;
+    }
+    &:nth-of-type(1){
+      background: #F5F5F5;
+      color: #A4A4A4;
+      height: 53px;
+      border-bottom: none;
+    }
+    &:nth-of-type(2){
+      i{
+        border: 1px solid #B01D1E;
+        color: #B01D1E;
+      }
+    }
+    &:nth-of-type(3){
+      i{
+        border: 1px solid #DC9E41;
+        color: #DC9E41;
+      }
+    }
+    &:nth-of-type(4){
+      i{
+        border: 1px solid #000;
+        color: #000;
+      }
+    }
+    &:nth-of-type(5){
+      i{
+        border: 1px solid #248A67;
+        color: #248A67;
+      }
+    }
+
+
+  }
+  &__col{
+    min-width: 120px;
+    display: flex;
+    align-items: center;
+  }
+  &__footer{
+    font-weight: 500;
+    font-size: 15px;
+    color: #959595;
+  }
+}
+
+@media (max-width: $xl) {
+  .bug-bounty {
+    &__img {
+    }
+  }
+}
+
+@media (max-width: $lg) {
+  .bug-bounty {
+    &__img {
+
+    }
+  }
+}
+
+@media (max-width: $md) {
+  .bug-bounty {
+    &__img {
+      float: none;
+      margin-top: 0;
+
+    }
+    &__contacts {
+      padding-left: 25px;
+    }
+    h1 {
+      & + p {
+        margin-bottom: 30px;
+      }
+    }
+    p {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+  }
+}
