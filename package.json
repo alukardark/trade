@@ -21,6 +21,7 @@
     "wow.js": "^1.2.2",
     "@cycjimmy/swiper-animation": "^4.1.0",
     "animate.css": "^4.1.0",
-    "tabbyjs": "^12.0.3"
+    "tabbyjs": "^12.0.3",
+    "micromodal": "^0.3.2"
   }
 }

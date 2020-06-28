@@ -69,3 +69,56 @@ if (document.querySelector('.platform__slider')) {
     });
 }
 
+
+if (document.querySelector('.personal-area__tabs-slider.swiper-container')) {
+    let howFindSwiper1 = undefined;
+
+    function initNewsSwiper() {
+        let w=window,
+            d=document,
+            e=d.documentElement,
+            g=d.getElementsByTagName('body')[0],
+            x=w.innerWidth||e.clientWidth||g.clientWidth,
+            y=w.innerHeight||e.clientHeight||g.clientHeight;
+
+
+        if (x < 768 && howFindSwiper1 == undefined) {
+            howFindSwiper1 = new Swiper(".personal-area__tabs-slider.swiper-container", {
+                slidesPerView: 'auto',
+                spaceBetween: 0,
+                slideToClickedSlide: true,
+                freeMode: true,
+                // centeredSlides: true,
+                on: {
+                    touchEnd: function () {
+                        if( document.querySelector('.personal-area__tabs-slider .swiper-slide-active a') !== null){
+                             document.querySelector('.personal-area__tabs-slider .swiper-slide-active a').click();
+                        }
+                    },
+                    transitionEnd: function () {
+                        if(document.querySelector('.personal-area__tabs-slider .swiper-slide-active a') !== null){
+                            // document.querySelector('.personal-area__tabs-slider .swiper-slide-active a').click();
+                        }
+
+                    },
+                }
+            });
+
+        } else if (x > 767 && howFindSwiper1 != undefined) {
+            howFindSwiper1.destroy();
+            howFindSwiper1 = undefined;
+            document.querySelector('.personal-area__tabs-slider .swiper-wrapper').removeAttribute('style');
+            document.querySelector('.personal-area__tabs-slider .swiper-slide').removeAttribute('style');
+        }
+    }
+
+
+    window.addEventListener('resize', function () {
+        initNewsSwiper();
+    }, true);
+
+
+    initNewsSwiper();
+}
+
+
