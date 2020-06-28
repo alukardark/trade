@@ -1,3 +1,104 @@
 .conditions{
+  &__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  &__box{
+    border-top: 2px solid #000000;
+    border-left: 1px solid #C0C0C0;
+    border-right: 1px solid #C0C0C0;
+    border-bottom: 1px solid #C0C0C0;
+    padding: 0 40px 40px;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p{
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 184.9%;
+      text-align: center;
+      color: #323232;
+      padding: 25px 0;
+    }
+    a{
+      font-weight: normal;
+      font-size: 13px;
+      text-align: center;
+      text-decoration-line: underline;
+      color: #B01D1E;
+      transition: .2s ease-in-out all;
+      &:hover{
+        color: #000;
+        text-decoration-color: transparent;
+      }
+    }
 
+  }
+  &__title{
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 1px solid #B3B3B3;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: $xl) {
+  .conditions {
+    &__box{
+      max-width: 280px;
+      padding: 0 25px 30px;
+    }
+  }
+}
+
+@media (max-width: $lg) {
+  .conditions {
+    &__list{
+      flex-direction: column;
+    }
+    &__box{
+      width: 100%;
+      max-width: 100%;
+      margin-bottom: 12px;
+      border-top: 1px solid #C0C0C0;
+      align-items: unset;
+      &:last-of-type{
+        margin-bottom: 0;
+      }
+      p{
+        text-align: left;
+        padding: 0;
+        margin-bottom: 15px;
+      }
+    }
+    &__box{
+      flex-direction: row;
+      padding: 25px 15px;
+    }
+    &__title{
+      border-bottom: none;
+      border-right: 1px solid #B3B3B3;
+      height: auto;
+      width: 215px;
+      min-width: 215px;
+      margin-right: 35px;
+    }
+    &__text{
+      align-items: flex-start;
+      max-width: 330px;
+      padding: 12px 0 0;
+    }
+  }
 }
