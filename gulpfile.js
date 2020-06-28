@@ -18,6 +18,7 @@ gulp.task('scripts', function() {
         'node_modules/simple-parallax-js/dist/simpleParallax.min.js',
         'node_modules/wow.js/dist/wow.min.js',
         'node_modules/@cycjimmy/swiper-animation/dist/swiper-animation.umd.min.js',
+        'node_modules/tabbyjs/dist/js/tabby.min.js',
     ])
         .pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
         .pipe(uglify()) // Сжимаем JS файл

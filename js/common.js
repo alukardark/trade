@@ -27,3 +27,7 @@ document.querySelectorAll('.parallax').forEach(el => {
     el.classList.add('vis');
 });
 
+
+document.querySelectorAll('[data-tabs]').forEach((el) => {
+    new Tabby('#' + el.id);
+});
