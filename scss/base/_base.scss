@@ -56,6 +56,37 @@ ul {
   padding: 0;
   list-style-type: none;
 }
+
+ol {
+  list-style-type: none;
+  counter-reset: item;
+  margin: 0;
+  padding: 0;
+  & > li {
+    display: table;
+    counter-increment: item;
+    margin-bottom: 0.6em;
+    &:before {
+      content: counters(item, ".") ". ";
+      display: table-cell;
+      padding-right: 0.5em;
+    }
+  }
+  li {
+    ol {
+      & > li {
+        margin: 0;
+        &:before {
+          :before {
+            content: counters(item, ".") " ";
+          }
+        }
+      }
+    }
+  }
+
+}
+
 a {
   outline: none;
   transition: .2s ease-in-out color;

@@ -1,36 +1,76 @@
-.deposit{
+.deposit {
   padding-top: 80px;
   max-width: 1050px;
   margin-left: auto;
   margin-right: auto;
-  h1{
+  h1 {
     font-size: 50px;
     margin-bottom: 30px;
-    &+p{
+    & + p {
       margin-bottom: 50px;
-      max-width: 420px;
+      max-width: 400px;
     }
   }
-  p{
+  p {
     margin-bottom: 30px;
+    font-weight: 500;
   }
-  &__img{
-    width: 544px;
+  ol {
+    font-weight: 500;
+  }
+  &__img {
     float: right;
-    margin-top: -100px;
+    margin-top: -80px;
+    width: 450px;
+  }
+
+  .advantages__list {
+    margin: 140px auto 75px;
   }
 }
-@media (max-width: 767px){
+
+@media (max-width: $xl) {
   .deposit {
-    &__contacts{
+    &__img {
+      width: 400px;
+    }
+    .advantages__list {
+      margin: 110px auto 65px;
+    }
+  }
+}
+
+@media (max-width: $lg) {
+  .deposit {
+    &__img {
+      max-width: 320px;
+      width: 100% ;
+    }
+    .advantages__list {
+      margin: 80px auto 55px;
+    }
+  }
+}
+
+@media (max-width: $md) {
+  .deposit {
+    &__img {
+      float: none;
+      margin-top: 0;
+
+    }
+    .advantages__list {
+      margin: 50px auto 30px;
+    }
+    &__contacts {
       padding-left: 25px;
     }
-    h1{
-      &+p{
+    h1 {
+      & + p {
         margin-bottom: 30px;
       }
     }
-    p{
+    p {
       font-size: 14px;
       margin-bottom: 20px;
     }

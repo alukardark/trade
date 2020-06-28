@@ -30,8 +30,11 @@
     transform: rotate(45deg);
   }
 }
-.big-text{
+.big-text, .big-text p{
   font-size: 22px;
+  &:before {
+    top: 15px;
+  }
 }
 
 @-webkit-keyframes tape {
@@ -59,8 +62,11 @@
     padding-left: 25px;
     margin-top: 25px;
   }
-  .big-text{
-    font-size: 18px !important;
+  .big-text, .big-text p{
+    font-size: 16px !important;
+    &:before{
+      top: 9px;
+    }
   }
 
 }

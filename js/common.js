@@ -2,6 +2,7 @@ import {event, toggleClass} from './functions.js';
 import './slider.js';
 import './burger.js';
 import './lng-btn.js';
+import './login-btn.js';
 import './parallax.js';
 
 
