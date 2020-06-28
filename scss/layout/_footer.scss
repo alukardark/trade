@@ -319,6 +319,21 @@
       padding-top: 50px;
     }
   }
+
+  &--lk{
+    padding-bottom: 50px;
+    .footer__profile{
+      justify-content: flex-end;
+      margin-right: 15px;
+    }
+    .footer__row{
+      align-items: center;
+    }
+    .footer__add{
+      align-items: flex-start;
+      margin-top: 50px;
+    }
+  }
 }
 
 @media (max-width: $xl) {
@@ -339,7 +354,7 @@
       background: #FFFFFF;
       box-shadow: 0px -20px 20px 0px rgba(0, 0, 0, 0.15);
       position: absolute;
-      bottom: 99%;
+      bottom: 97%;
       left: 0;
       width: 100%;
       padding-left: 15px;
@@ -382,6 +397,14 @@
       width: 280px;
       min-width: 280px;
     }
+    &--lk{
+      .footer__profile{
+        margin-right: 0px;
+      }
+      .footer__lng{
+        margin-right: 40px;
+      }
+    }
   }
 }
 
@@ -398,6 +421,11 @@
     &__flex-wrap {
       margin-bottom: 20px;
     }
+    &__mobile-menu {
+      bottom: 100%;
+    }
+
+
   }
 }
 
@@ -408,7 +436,7 @@
     &__logo {
       margin-top: -10px;
       background-image: url(../img/logo-m.svg);
-      background-position: left;
+      background-position: center left;
       min-width: 30px;
       height: 30px;
       margin-right: 40px;
@@ -422,7 +450,7 @@
       height: auto;
       position: absolute;
       justify-content: flex-end;
-      bottom: 98%;
+      bottom: 100%;
     }
     &__nav {
       margin-top: 45px;
