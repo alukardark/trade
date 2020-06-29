@@ -38,3 +38,24 @@ document.querySelectorAll('[data-tabs]').forEach((el) => {
 });
 
 
+
+if (document.querySelector('.js-choice') !== null) {
+    new Choices(' .js-choice', {
+        itemSelectText: '',
+        loadingText: 'Загрузка...',
+        searchEnabled: false,
+        shouldSort: false,
+    });
+}
+
+if (document.querySelector(' .js-choice')) {
+    document.querySelector(' .js-choice').addEventListener(
+        'showDropdown',
+        function (event) {
+            new SimpleBar(document.querySelector('  .choices__list--dropdown .choices__list'), {
+                autoHide: false
+            });
+        },
+        false,
+    );
+}

@@ -1,0 +1,28 @@
+.xxx{
+  .simplebar-content {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
+  .simplebar-track.simplebar-horizontal .simplebar-scrollbar:before {
+    display: none;
+  }
+  .simplebar-scrollbar {
+    width: 8px;
+    right: 0px;
+  }
+  .simplebar-scrollbar:before {
+    background-color: #949494;
+  }
+  .simplebar-track.simplebar-vertical {
+    transition: .5s ease-in-out height;
+    background-color: #fff;
+    width: 8px;
+    border-radius: 25px;
+  }
+  .simplebar-track.simplebar-vertical .simplebar-scrollbar:before {
+    opacity: 1;
+    top: 0px;
+    bottom: 0px;
+  }
+}
+

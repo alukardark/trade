@@ -1,0 +1,106 @@
+.xxx {
+  .choices {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    width: 155px;
+
+    &__input {
+      font-size: 16px;
+    }
+    &__inner {
+      min-height: 47px;
+      width: 300px;
+      font-family: Roboto;
+      font-weight: normal;
+      font-size: 16px;
+      color: #010101;
+      padding: 10px 30px 0 20px;
+      background: transparent;
+      border: 1px solid #E4E4E4;
+      border-radius: 3px;
+
+    }
+    .choices__placeholder {
+      opacity: 1;
+    }
+    &__list {
+      &--dropdown {
+        border-radius: 5px;
+        padding: 15px 7px 15px 15px;
+        border: none;
+        box-shadow: 0 0 57px rgba(118, 111, 84, 0.15);
+        .choices__item {
+          font-family: Roboto;
+          margin-right: 16px;
+          font-size: 18px;
+          padding: 3px 10px;
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+        }
+        .choices__placeholder {
+          display: none;
+        }
+        .choices__list {
+          margin-top: 0;
+          max-height: 240px;
+        }
+      }
+      &--single {
+        padding: 0;
+        .choices__item {
+        }
+      }
+    }
+
+    &[data-type*=select-one] {
+      .choices__inner {
+        padding-bottom: 0;
+      }
+      &:after {
+        content: "";
+        height: 5px;
+        width: 10px;
+        background: url(../img/arrow-b.svg) center no-repeat;
+        position: absolute;
+        right: 18px;
+        top: 50%;
+        margin-top: -1px;
+        pointer-events: none;
+        border: none;
+        transition: .2s ease-in-out transform;
+      }
+      &.is-open:after {
+        transform: rotate(180deg);
+        margin-top: -1px;
+      }
+      .choices__input {
+        border: 1px solid #dedede;
+        border-radius: 5px;
+        padding: 5px 10px;
+        margin-right: 18px;
+        width: calc(100% - 18px);
+      }
+    }
+  }
+}
+
+@media (max-width: $md) {
+  .modal-sign-up {
+    .choices {
+      &__list {
+        &--dropdown {
+          margin-top: 4px;
+        }
+      }
+    }
+  }
+  .sign-up__choose-club {
+    .choices {
+      &__inner{
+        font-size: 36px;
+      }
+    }
+  }
+}
