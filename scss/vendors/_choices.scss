@@ -1,5 +1,4 @@
-.personal-area__accounts-filter,
-.personal-area__btns-filter--mobile{
+.personal-area__accounts-filter, .personal-area__btns-filter--mobile {
   .choices {
     margin-bottom: 0;
     display: flex;
@@ -39,7 +38,7 @@
           color: #000;
           font-size: 16px;
           padding: 10px 10px;
-          &:hover{
+          &:hover {
             background: #E3E3E3;
           }
           &.is-highlighted {
@@ -83,7 +82,7 @@
       }
       &.is-open {
         background: #F2F2F2;
-        &:after{
+        &:after {
           transform: rotate(180deg);
           margin-top: -4px;
         }
@@ -100,7 +99,7 @@
   }
 }
 
-.personal-area__btns-filter--mobile{
+.personal-area__btns-filter--mobile {
   .choices {
     &__inner {
       background: #000;
@@ -109,7 +108,7 @@
     &__list {
       &--dropdown {
         .choices__item {
-          &:hover{
+          &:hover {
           }
           &.is-highlighted {
           }
@@ -136,9 +135,7 @@
   }
 }
 
-
-
-.personal-area__calculator{
+.personal-area__calculator {
   .choices {
     margin-bottom: 0;
     display: flex;
@@ -165,15 +162,13 @@
         border: none;
         background: #F2F2F2;
         z-index: 40;
-        //box-shadow: 0px 4px 64px rgba(0,0,0,0.11);
-        //box-shadow: 0 0 57px rgba(118, 111, 84, 0.15);
         .choices__item {
           margin-right: 0;
           font-weight: 500;
           color: #000;
           font-size: 16px;
           padding: 10px 10px;
-          &:hover{
+          &:hover {
             background: #E3E3E3;
           }
           &.is-highlighted {
@@ -190,15 +185,16 @@
           margin-top: 0;
           max-height: 240px;
         }
-
-        &:before{
-          content: '';
-          background: url(../img/zoom.svg);
-          width: 12px;
-          height: 12px;
-          position: absolute;
-          top: 18px;
-          left: 11px;
+        &.js-choice--search {
+          &:before {
+            content: '';
+            background: url(../img/zoom.svg);
+            width: 12px;
+            height: 12px;
+            position: absolute;
+            top: 18px;
+            left: 11px;
+          }
         }
       }
       &--single {
@@ -207,8 +203,6 @@
         }
       }
     }
-
-
     &[data-type*=select-one] {
       .choices__inner {
         //padding-bottom: 0;
@@ -228,7 +222,7 @@
       }
       &.is-open {
         background: #F2F2F2;
-        &:after{
+        &:after {
           transform: rotate(180deg);
           margin-top: -4px;
         }
@@ -246,26 +240,25 @@
         border: none;
         border-bottom: 1px solid #000;
 
-
       }
     }
-
-
   }
 }
 
+
+
 @media (max-width: $md) {
-  .personal-area__accounts-filter{
+  .personal-area__accounts-filter {
     .choices {
       &__inner {
         background: #F2F2F2;
       }
       &__list {
         &--dropdown {
-          box-shadow: 0 10px 20px rgba(118,111,84,0.15);
+          box-shadow: 0 10px 20px rgba(118, 111, 84, 0.15);
         }
       }
-      }
+    }
   }
 
 }

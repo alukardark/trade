@@ -44,6 +44,9 @@ if (document.querySelector('.js-choice--search') !== null) {
         searchEnabled: true,
         shouldSort: false,
         noResultsText: 'No results found',
+        classNames: {
+            listDropdown: 'choices__list--dropdown js-choice--search',
+        }
     });
 }
 if(document.querySelector('.js-choice--default')){
