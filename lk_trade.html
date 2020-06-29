@@ -123,7 +123,7 @@
                                 <div class="personal-area__accounts-filter-row">
                                     <div class="personal-area__accounts-filter-wrap">
                                         <div class="personal-area__accounts-filter">
-                                            <select name="ACCOUNTS" class="js-choice">
+                                            <select name="ACCOUNTS" class="js-choice js-choice--default">
                                                 <option value="ALL ACCOUNTS">All accounts</option>
                                                 <option value="Rapid">Rapid</option>
                                                 <option value="Standard">Standard</option>
@@ -138,7 +138,7 @@
                                         </div>
 
                                         <div class="personal-area__btns-filter--mobile d-md-none">
-                                            <select name="exchange‎" class="js-choice">
+                                            <select name="exchange‎" class="js-choice js-choice--default">
                                                 <option value="FOREX">FOREX</option>
                                                 <option value="CRYPTO">CRYPTO</option>
                                                 <option value="indexes (cfd)">indexes (cfd)</option>
@@ -165,8 +165,6 @@
                                         </li>
                                     </ul>
                                 </div>
-
-
 
 
                                 <div class="personal-area__table">
@@ -239,19 +237,6 @@
                                         </div>
                                     </div>
                                 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
                             </form>
 
 
@@ -260,7 +245,168 @@
                         </div>
 
                         <div id="calculator">
-                            333
+
+                            <div class="personal-area__calculator">
+                                <h3>Calculator trade</h3>
+
+                                <form action="#">
+                                    <div class="personal-area__calculator-title">main parameters</div>
+                                    <div class="personal-area__calculator-row ">
+
+
+                                        <div class="personal-area__calculator-col scrollbar">
+                                            <label for="tool">Tool</label>
+                                            <select id="tool" name="tool" class="js-choice js-choice--search">
+                                                <option value="EURUSD">EURUSD</option>
+                                                <option value="EURUSD">EURUSD</option>
+                                                <option value="EURUSD">EURUSD</option>
+                                                <option value="EURUSD">EURUSD</option>
+                                                <option value="EURUSD">EURUSD</option>
+                                                <option value="EURUSD">EURUSD</option>
+                                                <option value="EURUSD">EURUSD</option>
+                                                <option value="EURUSD">EURUSD</option>
+                                                <option value="EURUSD">EURUSD</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="personal-area__calculator-col scrollbar">
+                                            <label for="lot">Lot</label>
+                                            <select id="lot" name="lot" class="js-choice js-choice--default">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="personal-area__calculator-col scrollbar">
+                                            <label for="leverage">Leverage</label>
+                                            <select id="leverage" name="leverage" class=" js-choice js-choice--default">
+                                                <option value="1">1:500</option>
+                                                <option value="1">1:500</option>
+                                                <option value="1">1:500</option>
+                                                <option value="1">1:500</option>
+                                                <option value="1">1:500</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="personal-area__calculator-col scrollbar">
+                                            <label for="currency">Account Currency</label>
+                                            <select id="currency" name="currency" class=" js-choice js-choice--default">
+                                                <option value="EUR">EUR</option>
+                                                <option value="EUR">EUR</option>
+                                                <option value="EUR">EUR</option>
+                                                <option value="EUR">EUR</option>
+                                                <option value="EUR">EUR</option>
+                                            </select>
+                                        </div>
+                                        <div class="personal-area__calculator-desc">Minimum lot size 0.1 maximum 100</div>
+                                    </div>
+
+
+                                    <div class="personal-area__calculator-title personal-area__calculator-title--not-marker">Contract Parameters (optional)</div>
+
+                                    <div class="personal-area__calculator-row">
+
+                                        <div class="personal-area__calculator-col scrollbar">
+                                            <label for="opening-price">Opening price</label>
+                                            <select id="opening-price" name="opening-price" class=" js-choice js-choice--default">
+                                                <option value="EURUSD">EURUSD</option>
+                                                <option value="EURUSD">EURUSD</option>
+                                                <option value="EURUSD">EURUSD</option>
+                                                <option value="EURUSD">EURUSD</option>
+                                                <option value="EURUSD">EURUSD</option>
+                                                <option value="EURUSD">EURUSD</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="personal-area__calculator-col scrollbar">
+                                            <label for="closing-price">Closing price</label>
+                                            <select id="closing-price" name="closing-price" class=" js-choice js-choice--default">
+                                                <option value="1">1</option>
+                                                <option value="1">1</option>
+                                                <option value="1">1</option>
+                                                <option value="1">1</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="personal-area__calculator-col scrollbar">
+                                            <label for="buy-sell">Buy Sell</label>
+                                            <select id="buy-sell" name="buy-sell" class=" js-choice js-choice--default">
+                                                <option value="1:500">1:500</option>
+                                                <option value="1:500">1:500</option>
+                                                <option value="1:500">1:500</option>
+                                                <option value="1:500">1:500</option>
+                                            </select>
+                                        </div>
+                                        <div class="personal-area__calculator-col scrollbar">
+                                            <input type="submit" value="Calculate">
+                                        </div>
+
+
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="personal-area__calculator-result">
+                                <div class="personal-area__calculator-result-row">
+                                    <div class="personal-area__calculator-result-col">Result</div>
+                                </div>
+
+                                <div class="personal-area__calculator-result-row">
+                                    <div class="personal-area__calculator-result-col">Contract size</div>
+                                    <div class="personal-area__calculator-result-col">10000000 EUR</div>
+                                </div>
+
+                                <div class="personal-area__calculator-result-row">
+                                    <div class="personal-area__calculator-result-col">Teak</div>
+                                    <div class="personal-area__calculator-result-col">0.00001</div>
+                                </div>
+
+                                <div class="personal-area__calculator-result-row">
+                                    <div class="personal-area__calculator-result-col">Item Cost</div>
+                                    <div class="personal-area__calculator-result-col">9.23 EUR</div>
+                                </div>
+
+                                <div class="personal-area__calculator-result-row">
+                                    <div class="personal-area__calculator-result-col">Swap (sale)</div>
+                                    <div class="personal-area__calculator-result-col">-0.75 EUR</div>
+                                </div>
+
+                                <div class="personal-area__calculator-result-row">
+                                    <div class="personal-area__calculator-result-col">Swap (purchase)</div>
+                                    <div class="personal-area__calculator-result-col">-5.13 EUR</div>
+                                </div>
+
+                                <div class="personal-area__calculator-result-row">
+                                    <div class="personal-area__calculator-result-col">Margin at current market price</div>
+                                    <div class="personal-area__calculator-result-col">200.00 EUR</div>
+                                </div>
+
+                                <div class="personal-area__calculator-result-row">
+                                    <div class="personal-area__calculator-result-col">Commission:</div>
+                                    <div class="personal-area__calculator-result-col">00001</div>
+                                </div>
+
+                                <div class="personal-area__calculator-result-row">
+                                    <div class="personal-area__calculator-result-col">Profit:</div>
+                                    <div class="personal-area__calculator-result-col">9.23 EUR</div>
+                                </div>
+                            </div>
+
+                            <div class="personal-area__calculator-footer">
+                                Calculations
+
+                                With a trading calculator, you can calculate various options. eg:
+
+                                <strong>Contract size = number of lots * contract or lot size</strong>
+                                2 lots EUR / USD: 2 * 100,000 EUR = 200,000 EUR
+
+                                <strong>Point value (Forex) = (1 point / quoted currency exchange rate to the US dollar) * lot * transaction volume per lot</strong>
+                                2 lots EUR / USD: (0,0001 / 1) * 2 * 100,000 EUR = 20 USD
+                            </div>
+
                         </div>
 
 

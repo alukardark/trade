@@ -17,6 +17,20 @@ event('.conditions__box', 'click', function (e) {
     }
 });
 
+event('.personal-area__btns-filter *', 'click', function (e) {
+    this.classList.add('active');
+
+    if (this.classList.contains('active')) {
+        document.querySelectorAll('.personal-area__btns-filter *').forEach(el => {
+            el.classList.remove('active');
+        });
+        this.classList.add('active');
+    } else {
+        this.classList.remove('active');
+    }
+});
+
+
 
 event('.personal-area__table-row', 'click', function (e) {
     e.preventDefault();

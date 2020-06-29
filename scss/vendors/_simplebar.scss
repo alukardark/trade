@@ -1,4 +1,4 @@
-.XXXpersonal-area__accounts-filter{
+.scrollbar{
   .simplebar-content {
     padding-right: 0px !important;
     padding-left: 0px !important;
@@ -7,17 +7,19 @@
     display: none;
   }
   .simplebar-scrollbar {
-    width: 8px;
+    width: 5px;
     right: 0px;
+
   }
   .simplebar-scrollbar:before {
     background-color: #949494;
+    border-radius: 0px;
   }
   .simplebar-track.simplebar-vertical {
     transition: .5s ease-in-out height;
-    background-color: #fff;
-    width: 8px;
-    border-radius: 25px;
+    background-color: transparent;
+    width: 5px;
+    border-radius: 0px;
   }
   .simplebar-track.simplebar-vertical .simplebar-scrollbar:before {
     opacity: 1;

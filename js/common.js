@@ -38,41 +38,34 @@ document.querySelectorAll('[data-tabs]').forEach((el) => {
 });
 
 
-
-if (document.querySelector('.js-choice') !== null) {
-    new Choices(' .js-choice', {
+if (document.querySelector('.js-choice--search') !== null) {
+    new Choices('.js-choice--search', {
         itemSelectText: '',
-        loadingText: 'Загрузка...',
+        searchEnabled: true,
+        shouldSort: false,
+        noResultsText: 'No results found',
+    });
+}
+if(document.querySelector('.js-choice--default')){
+    new Choices('.js-choice--default', {
+        itemSelectText: '',
         searchEnabled: false,
         shouldSort: false,
     });
 }
 
-if (document.querySelector(' .js-choice')) {
-    document.querySelector(' .js-choice').addEventListener(
-        'showDropdown',
-        function (event) {
-            new SimpleBar(document.querySelector('  .choices__list--dropdown .choices__list'), {
-                autoHide: false
-            });
-        },
-        false,
-    );
+
+if (document.querySelector('.scrollbar')) {
+    document.querySelectorAll('.scrollbar').forEach(el => {
+        el.addEventListener(
+            'showDropdown',
+            function (event) {
+                new SimpleBar(el.querySelector('.choices__list--dropdown .choices__list'), {
+                    autoHide: false
+                });
+            },
+            false,
+        );
+    });
 }
 
-//header-burger
-event('.personal-area__btns-filter *', 'click', function (e) {
-    // toggleClass(this, 'active');
-    this.classList.add('active');
-
-    if (this.classList.contains('active')) {
-
-        document.querySelectorAll('.personal-area__btns-filter *').forEach(el => {
-            el.classList.remove('active');
-        });
-
-        this.classList.add('active');
-    } else {
-        this.classList.remove('active');
-    }
-});
