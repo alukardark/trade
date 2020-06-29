@@ -46,3 +46,10 @@ event('.personal-area__table-row', 'click', function (e) {
         this.classList.remove('active');
     }
 });
+
+
+event('.personal-main__hidden-menu-btn', 'click', function (e) {
+    toggleClass(this.querySelector('.personal-main__hidden-menu'), 'active');
+
+
+});
