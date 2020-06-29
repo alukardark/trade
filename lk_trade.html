@@ -113,44 +113,143 @@
                                 </div>
                             </div>
 
-
-
                         </div>
 
                         <div id="specification-contracts">
 
-                            <form action="">
-                                <div class=" xxx ">
-                                    <select class="js-choice">
-                                        <option value="ALL ACCOINTS">ALL ACCOINTS</option>
-                                        <option value="Rapid">Rapid</option>
-                                        <option value="Standard">Standard</option>
-                                        <option value="Conservative">Conservative</option>
-                                    </select>
+                            <form action="#">
+
+
+                                <div class="personal-area__accounts-filter-row">
+                                    <div class="personal-area__accounts-filter-wrap">
+                                        <div class="personal-area__accounts-filter">
+                                            <select name="ACCOUNTS" class="js-choice">
+                                                <option value="ALL ACCOUNTS">All accounts</option>
+                                                <option value="Rapid">Rapid</option>
+                                                <option value="Standard">Standard</option>
+                                                <option value="Conservative">Conservative</option>
+                                            </select>
+                                        </div>
+                                        <div class="personal-area__btns-filter d-none d-md-flex">
+                                            <input class="active" type="button" value="FOREX">
+                                            <input type="button" value="CRYPTO">
+                                            <input type="button" value="indexes (cfd)">
+                                            <input type="button" value="commodities (cfd)">
+                                        </div>
+
+                                        <div class="personal-area__btns-filter--mobile d-md-none">
+                                            <select name="exchange‎" class="js-choice">
+                                                <option value="FOREX">FOREX</option>
+                                                <option value="CRYPTO">CRYPTO</option>
+                                                <option value="indexes (cfd)">indexes (cfd)</option>
+                                                <option value="commodities (cfd)">commodities (cfd)</option>
+                                            </select>
+                                        </div>
+
+                                    </div>
+
+                                    <ul class="personal-area__files">
+                                        <li>
+                                            <a href="#">
+                                                <i class="personal-area__pdf-ico"></i>
+                                                <span class="personal-area__format-file">pdf</span>
+                                                <span class="personal-area__weight-file">180.20 KB</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="personal-area__xls-ico"></i>
+                                                <span class="personal-area__format-file">xls</span>
+                                                <span class="personal-area__weight-file">6.95 KB</span>
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </div>
 
 
-                                <input type="button" value="FOREX">
-                                <input type="button" value="CRYPTO">
-                                <input type="button" value="indexes (cfd)">
-                                <input type="button" value="commodities (cfd)">
+
+
+                                <div class="personal-area__table">
+                                    <div class="personal-area__table-row personal-area__table-row--header">
+                                        <div class="personal-area__table-col">Asset</div>
+                                        <div class="personal-area__table-col">Marginality</div>
+                                        <div class="personal-area__table-col">Leverage</div>
+                                        <div class="personal-area__table-col">Min spread</div>
+                                        <div class="personal-area__table-col">Size of 1 lot</div>
+                                        <div class="personal-area__table-col">Cost of one point</div>
+                                        <div class="personal-area__table-col">Min price change</div>
+                                    </div>
+                                    <div class="personal-area__table-row active">
+                                        <div class="personal-area__table-col personal-area__table-col--tab">
+                                            <div class="personal-area__table-val personal-area__table-val--tab">AUDUSD</div>
+                                        </div>
+                                        <div class="personal-area__table-col">
+                                            <div class="personal-area__table-title">Marginality</div>
+                                            <div class="personal-area__table-val">2000</div>
+                                        </div>
+                                        <div class="personal-area__table-col">
+                                            <div class="personal-area__table-title">Leverage</div>
+                                            <div class="personal-area__table-val">1:500</div>
+                                        </div>
+                                        <div class="personal-area__table-col">
+                                            <div class="personal-area__table-title">Min spread</div>
+                                            <div class="personal-area__table-val">0.2</div>
+                                        </div>
+                                        <div class="personal-area__table-col">
+                                            <div class="personal-area__table-title">Size of 1 lot</div>
+                                            <div class="personal-area__table-val">1000000</div>
+                                        </div>
+                                        <div class="personal-area__table-col">
+                                            <div class="personal-area__table-title">Cost of one point</div>
+                                            <div class="personal-area__table-val">0.1</div>
+                                        </div>
+                                        <div class="personal-area__table-col">
+                                            <div class="personal-area__table-title">Min price change</div>
+                                            <div class="personal-area__table-val">0.00001</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="personal-area__table-row ">
+                                        <div class="personal-area__table-col personal-area__table-col--tab">
+                                            <div class="personal-area__table-val personal-area__table-val--tab">AUDUSD</div>
+                                        </div>
+                                        <div class="personal-area__table-col">
+                                            <div class="personal-area__table-title">Marginality</div>
+                                            <div class="personal-area__table-val">2000</div>
+                                        </div>
+                                        <div class="personal-area__table-col">
+                                            <div class="personal-area__table-title">Leverage</div>
+                                            <div class="personal-area__table-val">1:500</div>
+                                        </div>
+                                        <div class="personal-area__table-col">
+                                            <div class="personal-area__table-title">Min spread</div>
+                                            <div class="personal-area__table-val">0.2</div>
+                                        </div>
+                                        <div class="personal-area__table-col">
+                                            <div class="personal-area__table-title">Size of 1 lot</div>
+                                            <div class="personal-area__table-val">1000000</div>
+                                        </div>
+                                        <div class="personal-area__table-col">
+                                            <div class="personal-area__table-title">Cost of one point</div>
+                                            <div class="personal-area__table-val">0.1</div>
+                                        </div>
+                                        <div class="personal-area__table-col">
+                                            <div class="personal-area__table-title">Min price change</div>
+                                            <div class="personal-area__table-val">0.00001</div>
+                                        </div>
+                                    </div>
+                                </div>
 
 
 
 
 
-                                pdf   180.20 KB
-
-                                xls    6.95 KB
 
 
-                                Asset
-                                Marginality
-                                Leverage
-                                Min spread
-                                Size of 1 lot
-                                Cost of one point
-                                Min price change
+
+
+
+
 
 
                             </form>
