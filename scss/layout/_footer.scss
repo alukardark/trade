@@ -27,8 +27,6 @@
     li {
       margin-right: 35px;
       display: inline-block;
-      &:last-of-type {
-      }
     }
     a {
       font-weight: normal;
@@ -53,6 +51,65 @@
           height: 6px;
           background: #B01D1E;
           transform: rotate(45deg);
+        }
+      }
+    }
+
+    &--lk{
+      margin-left: 100px;
+      li {
+        margin-right: 55px;
+      }
+      a.link-trading {
+        position: relative;
+        &:before {
+          content: '';
+          width: 10px;
+          height: 10px;
+          background: url(../img/frame-black.svg) center/contain no-repeat;
+          position: absolute;
+          top: -10px;
+          left: -18px;
+          transform: rotate(90deg);
+        }
+        &:after {
+          content: '';
+          width: 10px;
+          height: 10px;
+          background: url(../img/frame-black.svg) center/contain no-repeat;
+          position: absolute;
+          bottom: -7px;
+          right: -18px;
+          transform: rotate(-90deg);
+        }
+        &.active {
+          padding-left: 0;
+          &:before {
+            background-image: url(../img/frame.svg);
+          }
+          &:after {
+            background-image: url(../img/frame.svg);
+          }
+        }
+      }
+      a.link-status {
+        position: relative;
+        padding-left: 16px;
+        &:before {
+          content: '';
+          width: 10px;
+          height: 10px;
+          background: url(../img/status.svg) center/contain no-repeat;
+          position: absolute;
+          top: 2px;
+          left: 0px;
+        }
+        &.active {
+          padding-left: 0;
+          &:before {
+            transform: none;
+            background: url(../img/status-red.svg) center/contain no-repeat;
+          }
         }
       }
     }
@@ -343,6 +400,12 @@
         margin-right: 25px;
         margin-bottom: 15px;
       }
+      &--lk {
+        margin-left: 70px;
+        li {
+          margin-right: 55px;
+        }
+      }
     }
   }
 }
@@ -389,6 +452,16 @@
       a {
         line-height: 1;
       }
+      &--lk{
+        margin-left: 15px;
+        a{
+          &.link-trading{
+            &:after{
+              display: none;
+            }
+          }
+        }
+      }
     }
     &__copy {
       min-width: 150px
@@ -424,8 +497,6 @@
     &__mobile-menu {
       bottom: 100%;
     }
-
-
   }
 }
 
@@ -483,6 +554,10 @@
 
       margin-left: auto;
       margin-right: auto;
+    }
+
+    &--lk{
+      padding-top: 30px;
     }
   }
 }

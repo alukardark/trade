@@ -255,10 +255,31 @@
       }
       &__list {
         &--dropdown {
+          padding: 0;
+          box-shadow: 0 10px 20px rgba(118, 111, 84, 0.15);
+        }
+      }
+    }
+  }
+  .personal-area__btns-filter--mobile {
+    .choices {
+      &__list {
+        &--dropdown {
+          padding: 0;
           box-shadow: 0 10px 20px rgba(118, 111, 84, 0.15);
         }
       }
     }
   }
 
+  .personal-area__calculator {
+    .choices {
+      &__list {
+        &--dropdown {
+          padding: 0;
+          box-shadow: 0 10px 20px rgba(118, 111, 84, 0.15);
+        }
+      }
+    }
+  }
 }
