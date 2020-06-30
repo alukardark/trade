@@ -19,7 +19,14 @@
 @import "vendors/choices";
 @import "node_modules/simplebar/dist/simplebar.min";
 @import "vendors/simplebar";
+@import "node_modules/tippy.js/dist/tippy";
+@import "node_modules/tippy.js/dist/themes/light";
 //@import "node_modules/badger-accordion/dist/badger-accordion";
+
+.tippy-tooltip.light-theme{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
 
 // 3. Base stuff
 @import

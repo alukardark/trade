@@ -22,6 +22,8 @@ new WOW().init({
 //     }
 // });
 
+
+
 if (navigator.userAgent.match(/(iPad|iPhone|iPod|Android|Silk)/gi)) {
    setTimeout(function(){
        document.querySelectorAll('.wow').forEach(el => {

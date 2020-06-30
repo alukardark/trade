@@ -22,6 +22,7 @@ gulp.task('scripts', function() {
         'node_modules/micromodal/dist/micromodal.min.js',
         'node_modules/choices.js/public/assets/scripts/choices.min.js',
         'node_modules/simplebar/dist/simplebar.min.js',
+        'node_modules/tippy.js/dist/tippy.min.js',
     ])
         .pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
         .pipe(uglify()) // Сжимаем JS файл
