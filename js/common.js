@@ -5,7 +5,8 @@ import './lng-btn.js';
 import './login-btn.js';
 import './parallax.js';
 import './hidden-block.js';
-import {accordion} from './squeezebox.js';
+import './deposit-copy.js';
+// import {accordion} from './squeezebox.js';
 
 
 
@@ -16,7 +17,7 @@ new WOW().init({
 // window.addEventListener('load', function () {
 //     if (document.querySelector('.accordion') !== null) {
 //         accordion();
-//         document.querySelector('.accordion-head.open').click();
+//         // document.querySelector('.accordion-head.open').click();
 //
 //     }
 // });
@@ -30,6 +31,12 @@ if (navigator.userAgent.match(/(iPad|iPhone|iPod|Android|Silk)/gi)) {
        });
    }, 300);
 }
+
+setTimeout(function(){
+    document.querySelectorAll('.wow').forEach(el => {
+        el.classList.remove('wow');
+    });
+},2000);
 
 
 document.querySelectorAll('.parallax').forEach(el => {
@@ -62,8 +69,8 @@ if(document.querySelector('.js-choice--default')){
 }
 
 
-if (document.querySelector('.scrollbar')) {
-    document.querySelectorAll('.scrollbar').forEach(el => {
+if (document.querySelector('.personal-area__calculator-col.scrollbar')) {
+    document.querySelectorAll('.personal-area__calculator-col.scrollbar').forEach(el => {
         el.addEventListener(
             'showDropdown',
             function (event) {
@@ -75,4 +82,20 @@ if (document.querySelector('.scrollbar')) {
         );
     });
 }
+
+if (document.querySelector('.accordion-cont .scrollbar')) {
+    document.querySelectorAll('.accordion-cont .scrollbar').forEach(el => {
+        new SimpleBar(el, {
+            autoHide: false
+        });
+    });
+}
+
+
+
+
+
+
+
+
 
