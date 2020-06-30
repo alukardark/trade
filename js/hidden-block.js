@@ -49,7 +49,10 @@ event('.personal-area__table-row', 'click', function (e) {
 
 
 event('.personal-main__hidden-menu-btn', 'click', function (e) {
-    toggleClass(this.querySelector('.personal-main__hidden-menu'), 'active');
+    toggleClass(this.nextElementSibling, 'active');
+});
 
-
+event('.personal-main__demo-row--header', 'click', function (e) {
+    toggleClass(this, 'active');
+    toggleClass(this.nextElementSibling, 'active');
 });

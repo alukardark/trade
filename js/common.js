@@ -5,7 +5,7 @@ import './lng-btn.js';
 import './login-btn.js';
 import './parallax.js';
 import './hidden-block.js';
-// import {accordion} from './squeezebox.js';
+import {accordion} from './squeezebox.js';
 
 
 
@@ -13,9 +13,9 @@ new WOW().init({
     mobile: false,
 });
 
-// window.addEventListener('load', function () {
-//     accordion();
-// });
+window.addEventListener('load', function () {
+    accordion();
+});
 
 if (navigator.userAgent.match(/(iPad|iPhone|iPod|Android|Silk)/gi)) {
    setTimeout(function(){

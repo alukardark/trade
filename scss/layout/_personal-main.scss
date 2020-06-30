@@ -59,7 +59,7 @@
     align-items: center;
     padding: 10px 0 10px 30px;
     border-bottom: #F5F5F5 solid 2px;
-    &:first-of-type{
+    &--header{
       height: 44px;
       background: #F5F5F5;
       border-bottom: none;
@@ -117,15 +117,16 @@
   &__hidden-menu{
     opacity: 0;
     visibility: hidden;
-    top: 30px;
-    right: 50%;
+    top: 50px;
+    right: 15px;
     transform: translateX(50%);
     position: absolute;
     width: 150px;
     background: #FFFFFF;
     transition: .2s ease-in-out all;
-    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 4px 24px rgba(0,0,0,0.08);
     padding: 0 15px;
+    z-index: 3;
 
     &:before{
       content: '';
@@ -135,8 +136,7 @@
       transform: translateX(-50%);
       width: 21px;
       height: 10px;;
-      border: 10px solid transparent;
-      border-bottom: 10px solid #fff;
+      background: url(../img/figure.png) center/contain no-repeat;
     }
     &.active{
       opacity: 1;
@@ -306,7 +306,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 0 10px 30px;
-    &:first-of-type{
+    &--header{
       height: 44px;
       background: #F5F5F5;
       font-weight: bold;
@@ -314,13 +314,71 @@
       text-transform: uppercase;
       color: #A4A4A4;
       align-items: center;
-    }
+      padding: 10px 0 10px 45px;
+      cursor: pointer;
+      &:hover{
+        span{
+          text-decoration-color: transparent !important;
+        }
+      }
+      &:before{
+        content: '';
+        width: 8px;
+        height: 4px;
+        position: absolute;
+        top: 20px;
+        left: 22px;
+        transform: rotate(180deg);
+        transition: .2s ease-in-out all;
+        background: url(../img/arrow-top-gray.svg) center/contain no-repeat;
+      }
+      span{
+        display: none;
 
+        transition: .2s ease-in-out all;
+        &.vis{
+          display: block;
+          text-decoration: underline;
+          text-decoration-color: #A4A4A4;
+        }
+      }
+      &.active{
+        &:before{
+          transform: rotate(0deg);
+        }
+        span{
+          display: block;
+          &.vis{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  &__demo-hidden{
+    transition: .2s ease-in-out all;
+    max-height: 0;
+    .personal-main__table-row, .personal-main__demo-total{
+      transition: .2s ease-in-out all;
+      opacity: 0;
+      visibility: hidden;
+      max-height: 0px;
+    }
+    &.active{
+      max-height: 1000px;
+      .personal-main__table-row, .personal-main__demo-total{
+        opacity: 1;
+        visibility: visible;
+        max-height: 50px;
+      }
+
+    }
   }
   &__demo-total{
     display: flex;
     justify-content: space-between;
-    margin-top: 15px;
+    margin-top: 25px;
+    align-items: center;
   }
   &__demo-total-title{
     font-weight: bold;
@@ -334,4 +392,106 @@
     text-transform: uppercase;
     color: #C7C7C7;
   }
+}
+
+@media (max-width: $xl) {
+  .personal-main {
+    &__table{
+      margin-right: 35px;
+    }
+  }
+}
+
+@media (max-width: $lg) {
+  .personal-main {
+    &__wrap{
+      flex-direction: column;
+    }
+    &__table{
+      margin-bottom: 20px;
+    }
+    &__news{
+      padding-left: 0;
+      border-left: none;
+      margin-top: 0;
+    }
+    &__news-list{
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    &__news-item{
+      width: 28%;
+    }
+    &__hidden-menu{
+      right: 65px;
+      &:before{
+        left: auto;
+        right: 15px;
+        transform: none;
+      }
+    }
+  }
+}
+@media (max-width: $sm) {
+  .personal-main{
+    &__table-col{
+      font-size: 13px;
+    }
+    &__table-row{
+      padding: 10px 0 10px 5px;
+      &--header{
+        .personal-main__table-col{
+          font-size: 13px;
+        }
+      }
+
+    }
+    &__add-account{
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &__links{
+      margin-left: 0;
+      justify-content: center;
+    }
+    &__demo-total-amount{
+      font-size: 16px;
+    }
+    &__total-amount{
+      font-size: 16px;
+    }
+    &__total-title{
+      font-size: 13px;
+    }
+    &__demo-total-title{
+      font-size: 13px;
+    }
+    &__demo-row{
+      &--header{
+        padding: 10px 0 10px 25px;
+        &:before{
+          left: 10px;
+        }
+      }
+    }
+    &__demo-total{
+      margin-top: 15px;
+    }
+    &__news{
+      display: none;
+    }
+    &__total{
+      border-width: 8px;
+    }
+    &__table{
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    &__btns{
+      display: none;
+    }
+  }
+
 }
