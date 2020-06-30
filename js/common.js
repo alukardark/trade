@@ -13,9 +13,13 @@ new WOW().init({
     mobile: false,
 });
 
-window.addEventListener('load', function () {
-    accordion();
-});
+// window.addEventListener('load', function () {
+//     if (document.querySelector('.accordion') !== null) {
+//         accordion();
+//         document.querySelector('.accordion-head.open').click();
+//
+//     }
+// });
 
 if (navigator.userAgent.match(/(iPad|iPhone|iPod|Android|Silk)/gi)) {
    setTimeout(function(){
