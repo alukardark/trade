@@ -126,13 +126,17 @@ document.addEventListener('click', function (event) {
 
     var content = document.querySelector(event.target.hash);
 
+
+
     if(event.target.classList.contains('active')){
         event.target.classList.remove('active');
+        event.target.parentNode.classList.remove('active');
     }else{
         document.querySelectorAll('.setting-toggle').forEach(el => {
             el.classList.remove('active');
         });
         event.target.classList.add('active');
+        event.target.parentNode.classList.add('active');
     }
 
     if (!content) return;

@@ -40,6 +40,18 @@
     z-index: 1;
     margin-bottom: 15px;
     flex-wrap: wrap;
+    border: 1px solid transparent;
+    transition: .2s ease-in-out all;
+    &.active{
+      background: #fff;
+      border-color: #DEDEDE;
+      .setting__name i{
+        &:before{
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
   }
   &__info {
 
@@ -59,6 +71,18 @@
       position: absolute;
       left: -29px;
       top: 12px;
+      transition: .2s ease-in-out all;
+      &:before{
+        width: 100%;
+        height: 100%;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: .2s ease-in-out all;
+      }
     }
   }
 
@@ -69,9 +93,11 @@
         width: 18px;
         height: 18px;
         background: url(../img/change-password.svg) center/contain no-repeat;
+        &:before{
+          background: url(../img/change-password-red.svg) center/contain no-repeat;
+        }
       }
     }
-
   }
 
   &__btn {
@@ -110,31 +136,132 @@
         margin: 0;
       }
     }
+    i{
+      opacity: 1;
+      visibility: visible;
+      z-index: 1;
+      position: absolute;
+      top: 10px;
+      right: 0%;
+      width: 47px;
+      height: 47px;
+      transform: rotate(45deg);
+      &:after, &:before{
+        content: '';
+        background: #B8B8B8;
 
+        position: absolute;
+        top: 50%;
+        left: 50%;
+      }
+      &:after{
+        height: 1px;
+        width: 9px;
+        transform: translate(-50%, -50%);
+      }
+      &:before{
+        height: 9px;
+        width: 1px;
+        transform: translate(-50%, -50%);
+      }
+      //background:  url(../img/close.svg) center/10px no-repeat;
+      span{
+        transition: .3s ease-in-out all;
+        &:nth-of-type(1){
+          width: 15px;
+          height: 1px;
+          background: #B8B8B8;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+        &:nth-of-type(2){
+          width: 24px;
+          height: 1px;
+          background: #B8B8B8;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        }
+        &:nth-of-type(3){
+          width: 1px;
+          height: 47px;
+          background: #B8B8B8;
+          position: absolute;
+          bottom: 0;
+          top: 0;
+          left: 0;
+        }
+        &:nth-of-type(4){
+          width: 1px;
+          height: 30px;
+          background: #B8B8B8;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+        }
+      }
+      &:hover{
+        span{
+          &:nth-of-type(1){
+            width: 47px;
+          }
+          &:nth-of-type(2){
+            width: 47px;
+          }
+          &:nth-of-type(4){
+            height: 47px;
+          }
+        }
+      }
+    }
+
+    &.active{
+      color: transparent;
+      border-width: 0;
+      background: transparent;
+      &:before{
+        opacity: 0;
+      }
+      i{
+
+      }
+    }
   }
   &-toggle {
     //display: block;
   }
 
-  //&-cont {
-  //  display: none;
-  //  &.active{
-  //    display: block;
-  //  }
-  //
-  //}
+  &-cont {
+    //display: none;
+    max-height: 0;
+    opacity: 0;
+    visibility: visible;
+    overflow: hidden;
+    transition: .3s ease-in-out all;
+    &.active{
+      opacity: 1;
+      visibility: visible;
+      max-height: 500px;
+      //display: block;
+    }
+
+  }
 
   &__change-password-form {
     width: 100%;
     form {
       display: flex;
       flex-direction: column;
+      padding-top: 10px;
       input[type='text'], input[type='password']{
         font-weight: 500;
         font-size: 14px;
         color: #A0A0A0;
         border-bottom: 1px solid #000000;
         background: transparent;
+        padding-bottom: 5px;
+        margin-bottom: 25px;
       }
       input[type='submit']{
         width: 184px;
@@ -147,6 +274,14 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        transition: .2s ease-in-out all;
+        border: 1px solid transparent;
+        margin-top: 10px;
+        &:hover{
+          background: transparent;
+          color: #000;
+          border-color: #000;
+        }
       }
     }
   }
