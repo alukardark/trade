@@ -38,7 +38,7 @@ setTimeout(function(){
     document.querySelectorAll('.wow').forEach(el => {
         el.classList.remove('wow');
     });
-},2000);
+},1000);
 
 
 document.querySelectorAll('.parallax').forEach(el => {

@@ -23,28 +23,35 @@
     bottom: 0px;
   }
 
-
-
-
   .simplebar-track.simplebar-horizontal .simplebar-scrollbar:before {
-    //display: none;
-    opacity: 1;
+   display: none;
   }
-  .simplebar-track.simplebar-horizontal {
-    transition: .5s ease-in-out height;
-    background-color: #E4E4E4;;
-    height: 4px;
-    border-radius: 0px;
+
+
+
+  &--horizontal{
+    .simplebar-track.simplebar-horizontal .simplebar-scrollbar:before {
+      //display: none;
+      display: block;
+      opacity: 1;
+    }
+    .simplebar-track.simplebar-horizontal {
+      transition: .5s ease-in-out height;
+      background-color: #E4E4E4;;
+      height: 4px;
+      border-radius: 0px;
+    }
+    .simplebar-track.simplebar-horizontal .simplebar-scrollbar{
+      height: 4px;
+      top: 0;
+      left: 0;
+    }
+    .simplebar-track.simplebar-horizontal .simplebar-scrollbar:before {
+      left: 0px;
+      right: 0px;
+    }
   }
-  .simplebar-track.simplebar-horizontal .simplebar-scrollbar{
-    height: 4px;
-    top: 0;
-    left: 0;
-  }
-  .simplebar-track.simplebar-horizontal .simplebar-scrollbar:before {
-    left: 0px;
-    right: 0px;
-  }
+
 }
 
 

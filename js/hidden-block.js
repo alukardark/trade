@@ -30,8 +30,6 @@ event('.personal-area__btns-filter *', 'click', function (e) {
     }
 });
 
-
-
 event('.personal-area__table-row', 'click', function (e) {
     e.preventDefault();
 
@@ -47,17 +45,21 @@ event('.personal-area__table-row', 'click', function (e) {
     }
 });
 
-
 event('.personal-main__hidden-menu-btn', 'click', function (e) {
-    toggleClass(this.nextElementSibling, 'active');
+    if(!this.nextElementSibling.classList.contains('active')){
+        document.querySelectorAll('.personal-main__hidden-menu.active').forEach(el => {
+            el.classList.remove('active');
+        });
+        this.nextElementSibling.classList.add('active');
+    }else{
+        this.nextElementSibling.classList.remove('active');
+    }
 });
 
 event('.personal-main__demo-row--header', 'click', function (e) {
     toggleClass(this, 'active');
     toggleClass(this.nextElementSibling, 'active');
 });
-
-
 
 event('a.accordion-head', 'click', function (e) {
     e.preventDefault();
