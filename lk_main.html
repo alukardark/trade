@@ -315,7 +315,6 @@
 
                             <div class="setting__wrap">
 
-
                                 <div class="setting__panel">
                                     <div class="setting__change-password">
                                         <div class="setting__block">
@@ -365,23 +364,191 @@
                                                 <span></span>
                                             </div>
 
-                                            <a href="#google-authenticator"
-                                               class="setting__btn setting-toggle">
+                                            <a href="#google-authenticator" class="setting__btn setting-toggle">
                                                 turn on
                                             </a>
 
-                                            <div id="google-authenticator" class=" setting-cont">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                            <div id="google-authenticator" class="setting-cont">
+
+                                                <p>Two-factor authentication (2FA) is an optional security enhancement for your IG account that improves protection against unauthorised access. If you decide to activate two-factor authentication, you'll need to enter a verification code as well as your password every time you log in. It is not currently compatible with MT4.</p>
+                                                <h6>How to set up two-factor authentication</h6>
+
+                                                <section>
+                                                    <p>1. Download the 'IG Authentication' app</p>
+                                                    <img src="img/section-1.png" alt="">
+                                                </section>
+                                                <section>
+                                                    <p>2. Activate two-factor authentication on your account</p>
+                                                    <img src="img/section-2.png" alt="">
+                                                </section>
+                                                <section>
+                                                    <p>3.Activate two-factor authentication on your account</p>
+                                                    <img src="img/section-3.png" alt="">
+                                                </section>
+
+                                                <div class="section-row">
+                                                    <div class="section-col">
+                                                        <h6>Using the app</h6>
+                                                        <p>
+                                                            Two-factor authentication (2FA) is an optional security enhancement for your IG account that improves protection unauthorised access. If you decide to activate two-factor authentication, you'll need to enter a verification code as well as your password every time you log in. It is not currently compatible with MT4.
+                                                            <br>
+                                                            Two-factor authentication (2FA) is an optional security enhancement for your IG account that improves protection unauthorised access. If you decide to activate two-factor authentication, you'll.
+                                                        </p>
+                                                    </div>
+                                                    <div class="section-col section-col--qr">
+                                                        <img src="img/qr.png">
+                                                        <div class="black-btn">general qr code</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="section-row">
+                                                    <div class="section-col section-col--activating">
+                                                        <h6>Activating two-factor authentication</h6>
+                                                        <img src="img/activating.png">
+                                                    </div>
+                                                    <div class="section-col ">
+                                                        <form action="">
+                                                            <label for="activate-code">Please enter the authentication code
+                                                                from your app.</label>
+                                                            <input id="activate-code" type="text">
+                                                            <input type="submit" value="Activate">
+                                                        </form>
+                                                    </div>
+                                                </div>
+
+
                                             </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="setting__login-set">
+                                        <div class="setting__block">
+                                            <div class="setting__info">
+                                                <div class="setting__name">
+                                                    <i></i> login set
+                                                </div>
+                                                <p>It is used to notify about price changes, receive information about your open positions, </p>
+                                            </div>
+
+                                            <a href="#login-set" class="setting__btn">
+                                                connect
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="setting__master-password">
+                                        <div class="setting__block">
+                                            <div class="setting__info">
+                                                <div class="setting__name">
+                                                    <i></i> master password
+                                                </div>
+                                                <p>It is used to notify about price changes, receive information about your open positions, </p>
+                                            </div>
+
+                                            <a href="#master-password" class="setting__btn">
+                                                Change
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="setting__title">Notifications</div>
+
+                                    <div class="setting__email-notifications">
+                                        <div class="setting__block">
+                                            <div class="setting__info">
+                                                <div class="setting__name">
+                                                    <i></i> email-notifications
+                                                </div>
+                                            </div>
+
+                                            <form action="">
+                                                <ul class="checkbox-list">
+                                                    <li>
+                                                        <input checked type="checkbox" name="login" id="login">
+                                                        <label for="login">
+                                                            <i></i>Login
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" name="liquidation-position" id="liquidation-position">
+                                                        <label for="liquidation-position">
+                                                            <i></i>Liquidation of a position
+                                                        </label>
+
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" name="margin-call" id="margin-call">
+                                                        <label for="margin-call">
+                                                            <i></i>Margin call
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
 
 
-
-
-
                                 <div class="setting__panel-add">
+
+                                    <form enctype="multipart/form-data" method="POST">
+                                        <label for="avatar" class="setting__avatar">
+                                            <span class="setting__avatar-img" style="background-image: url(img/profile.svg);"></span>
+                                            <span class="">
+                                                <span class="setting__avatar-title">Select a file</span>
+                                                <span class="setting__format">JPG, GIF, PNG (800K)</span>
+                                            </span>
+                                            <input id="avatar" name="avatar" type="file">
+                                        </label>
+
+
+                                        <div class="setting__email">
+                                            <input type="text" value="Chaostrade@gmail.com">
+                                        </div>
+                                    </form>
+
+                                    <div class="setting__title">Last Activity:</div>
+                                    <div class="setting__activity">
+                                        <div class="setting__activity-row">
+                                            <div class="setting__activity-col">
+                                                Date/tme
+                                            </div>
+                                            <div class="setting__activity-col">
+                                                Active
+                                            </div>
+                                        </div>
+                                        <div class="setting__activity-row">
+                                            <div class="setting__activity-col">
+                                                15.20.2020  / 20:00
+                                            </div>
+                                            <div class="setting__activity-col">
+                                                <strong>Password wad chaged</strong>
+                                            </div>
+                                        </div>
+                                        <div class="setting__activity-row">
+                                            <div class="setting__activity-col">
+                                                12.02.2020  / 10:00
+                                            </div>
+                                            <div class="setting__activity-col">
+                                                <strong>Logged in</strong>
+                                            </div>
+                                        </div>
+                                        <div class="setting__activity-row">
+                                            <div class="setting__activity-col">
+                                                02.11.2020  / 20:00
+                                            </div>
+                                            <div class="setting__activity-col">
+                                                <strong>Withdrawed</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="setting__warning">
+                                        <p><i></i> Have you noticed suspicious activity?</p>
+                                        <strong>Block your account</strong>
+                                        <a href="#" class="setting__block-btn">Block</a>
+                                    </div>
+
 
                                 </div>
 
