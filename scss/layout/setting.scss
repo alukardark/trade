@@ -1,0 +1,58 @@
+.setting {
+  &__title {
+
+  }
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+}
+
+.accordion-toggle {
+  display: block;
+}
+
+.accordion-cont {
+  display: none;
+}
+
+.accordion-cont.active {
+  display: block;
+}
+
+//.accordion {
+//  &-head {
+//    padding-top: 100px;
+//    border-bottom: 1px solid #DBDBDB;
+//    width: 100%;
+//    justify-content: space-between;
+//    align-items: flex-start;
+//    display: flex;
+//    position: relative;
+//    transition: .2s ease-in-out background, .2s ease-in-out border;
+//    &.open {
+//      border-bottom-color: transparent;
+//      .vacancies__plus:before {
+//        left: 0px;
+//        top: 11px;
+//        width: 30px;
+//        height: 8px;
+//      }
+//    }
+//    &:hover {
+//      .vacancies__title {
+//        color: #29B6FF;
+//      }
+//    }
+//  }
+//  &-cont {
+//    overflow: hidden;
+//    transition: .2s ease-in-out background, .2s ease-in-out margin;
+//    padding: 80px 130px;
+//    background: #F8F8F8;
+//    display: flex;
+//    flex-direction: column;
+//  }
+//}

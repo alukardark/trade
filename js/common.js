@@ -6,7 +6,7 @@ import './login-btn.js';
 import './parallax.js';
 import './hidden-block.js';
 import './deposit-copy.js';
-// import {accordion} from './squeezebox.js';
+ // import {accordion} from './squeezebox.js';
 
 
 
