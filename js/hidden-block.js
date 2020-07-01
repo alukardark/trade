@@ -87,8 +87,6 @@ event('.personal-main__demo-row--header', 'click', function (e) {
 
 
 
-
-
 document.addEventListener('click', function (event) {
     if (!event.target.classList.contains('accordion-toggle')) return;
 
@@ -135,6 +133,10 @@ document.addEventListener('click', function (event) {
         document.querySelectorAll('.setting-toggle').forEach(el => {
             el.classList.remove('active');
         });
+
+        document.querySelectorAll('.setting__block').forEach(el => {
+            el.classList.remove('active');
+        });
         event.target.classList.add('active');
         event.target.parentNode.classList.add('active');
     }
@@ -153,4 +155,8 @@ document.addEventListener('click', function (event) {
         accordions[i].classList.remove('active');
     }
     content.classList.toggle('active');
+});
+
+event('.setting__btn-close', 'click', function (e) {
+    this.nextElementSibling.click();
 });

@@ -42,14 +42,25 @@
     flex-wrap: wrap;
     border: 1px solid transparent;
     transition: .2s ease-in-out all;
-    &.active{
+    &.active {
       background: #fff;
       border-color: #DEDEDE;
-      .setting__name i{
-        &:before{
+      .setting__name i {
+        &:before {
           opacity: 1;
           visibility: visible;
         }
+      }
+      .setting__btn{
+        opacity: 0;
+        visibility: hidden;
+        right: 15px;
+      }
+      .setting__btn-close{
+        transform: rotate(45deg) scale(1);
+        right: 27px;
+        opacity: 1;
+        visibility: visible;
       }
     }
   }
@@ -72,7 +83,7 @@
       left: -29px;
       top: 12px;
       transition: .2s ease-in-out all;
-      &:before{
+      &:before {
         width: 100%;
         height: 100%;
         content: '';
@@ -93,7 +104,7 @@
         width: 18px;
         height: 18px;
         background: url(../img/change-password.svg) center/contain no-repeat;
-        &:before{
+        &:before {
           background: url(../img/change-password-red.svg) center/contain no-repeat;
         }
       }
@@ -114,6 +125,7 @@
     padding-top: 2px;
     transition: .2s ease-in-out all;
     position: relative;
+    right: 0px;
     &:before {
       content: '';
       width: 100%;
@@ -136,98 +148,97 @@
         margin: 0;
       }
     }
-    i{
-      opacity: 1;
-      visibility: visible;
-      z-index: 1;
-      position: absolute;
-      top: 10px;
-      right: 0%;
-      width: 47px;
-      height: 47px;
-      transform: rotate(45deg);
-      &:after, &:before{
-        content: '';
-        background: #B8B8B8;
 
-        position: absolute;
-        top: 50%;
-        left: 50%;
+    &.active {
+      //color: transparent;
+      //border-width: 0;
+      //background: transparent;
+      &:before {
+        //opacity: 0;
       }
-      &:after{
+
+    }
+  }
+
+  &__btn-close {
+    right: 15px;
+    z-index: 1;
+    position: absolute;
+    top: 27px;
+    width: 28px;
+    height: 28px;
+    transform: rotate(45deg);
+    opacity: 0;
+    visibility: hidden;
+    cursor: pointer;
+    transition: .2s ease-in-out all;
+    &:after, &:before {
+      content: '';
+      background: #B8B8B8;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transition: .3s ease-in-out all;
+    }
+    &:after {
+      height: 1px;
+      width: 9px;
+      transform: translate(-50%, -50%);
+    }
+    &:before {
+      height: 9px;
+      width: 1px;
+      transform: translate(-50%, -50%);
+    }
+    span {
+      transition: .3s ease-in-out all;
+      background: #B8B8B8;
+      position: absolute;
+      &:nth-of-type(1) {
+        width: 10px;
         height: 1px;
-        width: 9px;
-        transform: translate(-50%, -50%);
+        top: 0;
+        left: 0;
       }
-      &:before{
-        height: 9px;
+      &:nth-of-type(2) {
+        width: 16px;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+      }
+      &:nth-of-type(3) {
         width: 1px;
-        transform: translate(-50%, -50%);
+        height: 28px;
+        bottom: 0;
+        top: 0;
+        left: 0;
       }
-      //background:  url(../img/close.svg) center/10px no-repeat;
-      span{
-        transition: .3s ease-in-out all;
-        &:nth-of-type(1){
-          width: 15px;
-          height: 1px;
-          background: #B8B8B8;
-          position: absolute;
-          top: 0;
-          left: 0;
-        }
-        &:nth-of-type(2){
-          width: 24px;
-          height: 1px;
-          background: #B8B8B8;
-          position: absolute;
-          bottom: 0;
-          left: 0;
-        }
-        &:nth-of-type(3){
-          width: 1px;
-          height: 47px;
-          background: #B8B8B8;
-          position: absolute;
-          bottom: 0;
-          top: 0;
-          left: 0;
-        }
-        &:nth-of-type(4){
-          width: 1px;
-          height: 30px;
-          background: #B8B8B8;
-          position: absolute;
-          bottom: 0;
-          right: 0;
-        }
-      }
-      &:hover{
-        span{
-          &:nth-of-type(1){
-            width: 47px;
-          }
-          &:nth-of-type(2){
-            width: 47px;
-          }
-          &:nth-of-type(4){
-            height: 47px;
-          }
-        }
+      &:nth-of-type(4) {
+        width: 1px;
+        height: 19px;
+        bottom: 0;
+        right: 0;
       }
     }
-
-    &.active{
-      color: transparent;
-      border-width: 0;
-      background: transparent;
-      &:before{
-        opacity: 0;
+    &:hover {
+      &:after, &:before{
+        background: #000;
       }
-      i{
-
+      span {
+        background: #000;
+        &:nth-of-type(1) {
+          width: 28px;
+        }
+        &:nth-of-type(2) {
+          width: 28px;
+        }
+        &:nth-of-type(4) {
+          height: 28px;
+        }
       }
     }
   }
+
   &-toggle {
     //display: block;
   }
@@ -239,7 +250,7 @@
     visibility: visible;
     overflow: hidden;
     transition: .3s ease-in-out all;
-    &.active{
+    &.active {
       opacity: 1;
       visibility: visible;
       max-height: 500px;
@@ -254,16 +265,16 @@
       display: flex;
       flex-direction: column;
       padding-top: 10px;
-      input[type='text'], input[type='password']{
+      input[type='text'], input[type='password'] {
         font-weight: 500;
         font-size: 14px;
         color: #A0A0A0;
         border-bottom: 1px solid #000000;
         background: transparent;
-        padding-bottom: 5px;
+        padding-bottom: 6px;
         margin-bottom: 25px;
       }
-      input[type='submit']{
+      input[type='submit'] {
         width: 184px;
         height: 44px;
         background: #B01D1E;
@@ -277,7 +288,7 @@
         transition: .2s ease-in-out all;
         border: 1px solid transparent;
         margin-top: 10px;
-        &:hover{
+        &:hover {
           background: transparent;
           color: #000;
           border-color: #000;
