@@ -620,12 +620,12 @@
     strong{
       font-weight: 500;
       font-size: 13px;
-      line-height: 314.9%;
       text-transform: uppercase;
       color: #B01D1E;
     }
     &:nth-of-type(1){
       width: 40%;
+      padding-right: 15px;
     }
     &:nth-of-type(2){
       width: 60%;
@@ -734,15 +734,19 @@
           flex-direction: column;
           justify-content: space-between;
           max-width: 390px;
+          //max-width: 100%;
+          //margin-left: 0;
+          //margin-bottom: 0;
           form{
             max-width: 200px;
+            //max-width: 100%;
           }
           &--activating  {
-              img{
-                max-width: 220px;
-              }
+            img{
+              max-width: 220px;
             }
           }
+        }
       }
     }
   }
@@ -750,6 +754,7 @@
 
 @media (max-width: $lg){
   .setting{
+    padding-bottom: 25px;
     &__info{
       max-width: 400px;
     }
@@ -790,11 +795,12 @@
           form{
           }
           &--activating  {
+            //margin-bottom: 50px;
             img{
               max-width: 320px;
+            }
           }
         }
-      }
       }
     }
   }
@@ -802,6 +808,10 @@
 
 @media (max-width: $md){
   .setting{
+    padding-bottom: 25px;
+    &__panel{
+      margin-bottom: 60px;
+    }
     &__block{
       padding: 25px 15px 25px 15px;
       flex-direction: column;
@@ -825,7 +835,12 @@
 
     }
     &__google-authenticator {
+
       .setting-cont{
+        &.active{
+          max-height: 1900px;
+        }
+
         section{
           flex-direction: column;
           align-items: flex-start;
@@ -835,11 +850,31 @@
             margin-bottom: 10px;
           }
         }
+
+        .section-col{
+          max-width: 100%;
+          form{
+            max-width: 100%;
+          }
+          &--qr{
+            margin-top: 25px;
+            margin-left: 0;
+            margin-bottom: 0;
+          }
+          &--activating  {
+            margin-bottom: 35px;
+            img{
+              //max-width: 320px;
+            }
+
+          }
+        }
+
         .section-row{
           flex-direction: column;
         }
         .setting-col{
-          max-width: 100%;
+
           &--qr{
 
           }
@@ -847,6 +882,15 @@
         }
       }
 
+    }
+
+    &__activity{
+      margin-bottom: 40px;
+    }
+    &__activity-row{
+      &__activity-col{
+        font-size: 13px;
+      }
     }
   }
 }
