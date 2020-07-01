@@ -105,36 +105,35 @@ img::-moz-selection{
   background: transparent;
 }
 
-form ::-webkit-input-placeholder{
-  color: rgba(0, 0, 0, 0.3);
+input::-webkit-input-placeholder {
+  color: #A0A0A0;
   transition: opacity 0.3s ease;
 }
-form ::-moz-placeholder{
-  color: rgba(0, 0, 0, 0.3);
+input::-moz-placeholder {
+  color: #A0A0A0;
   transition: opacity 0.3s ease;
 }
-form :-moz-placeholder{
-  color: rgba(0, 0, 0, 0.3);
+input:-moz-placeholder {
+  color: #A0A0A0;
   transition: opacity 0.3s ease;
 }
-form :-ms-input-placeholder{
-  color: rgba(0, 0, 0, 0.3);
+input:-ms-input-placeholder {
+  color: #A0A0A0;
   transition: opacity 0.3s ease;
 }
-
-form :focus::-webkit-input-placeholder{
+input:focus::-webkit-input-placeholder {
   opacity: 0;
   transition: opacity 0.3s ease;
 }
-form :focus::-moz-placeholder{
+input:focus::-moz-placeholder {
   opacity: 0;
   transition: opacity 0.3s ease;
 }
-form :focus:-moz-placeholder{
+input:focus:-moz-placeholder {
   opacity: 0;
   transition: opacity 0.3s ease;
 }
-form :focus:-ms-input-placeholder{
+input:focus:-ms-input-placeholder {
   opacity: 0;
   transition: opacity 0.3s ease;
 }

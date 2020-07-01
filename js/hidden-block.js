@@ -88,9 +88,8 @@ event('.personal-main__demo-row--header', 'click', function (e) {
 
 
 
-// Listen for click on the document
-document.addEventListener('click', function (event) {
 
+document.addEventListener('click', function (event) {
     if (!event.target.classList.contains('accordion-toggle')) return;
 
     var content = document.querySelector(event.target.hash);
@@ -103,7 +102,6 @@ document.addEventListener('click', function (event) {
         });
         event.target.classList.add('active');
     }
-
 
     if (!content) return;
 
@@ -119,5 +117,36 @@ document.addEventListener('click', function (event) {
         accordions[i].classList.remove('active');
     }
     content.classList.toggle('active');
+});
 
-})
+
+
+document.addEventListener('click', function (event) {
+    if (!event.target.classList.contains('setting-toggle')) return;
+
+    var content = document.querySelector(event.target.hash);
+
+    if(event.target.classList.contains('active')){
+        event.target.classList.remove('active');
+    }else{
+        document.querySelectorAll('.setting-toggle').forEach(el => {
+            el.classList.remove('active');
+        });
+        event.target.classList.add('active');
+    }
+
+    if (!content) return;
+
+    event.preventDefault();
+
+    if (content.classList.contains('active')) {
+        content.classList.remove('active');
+        return;
+    }
+
+    var accordions = document.querySelectorAll('.setting-cont.active');
+    for (var i = 0; i < accordions.length; i++) {
+        accordions[i].classList.remove('active');
+    }
+    content.classList.toggle('active');
+});

@@ -1,0 +1,10 @@
+.accordion{
+  &-cont{
+    display: none;
+    &.active{
+      display: block;
+    }
+  }
+}
+
+

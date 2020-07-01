@@ -97,7 +97,7 @@ if (document.querySelector('.accordion-cont .scrollbar')) {
 
 
 
-
+document.querySelector('a[href="#setting"]').click();
 
 
 
