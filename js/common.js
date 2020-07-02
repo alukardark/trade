@@ -86,8 +86,22 @@ if (document.querySelector('.personal-area__calculator-col.scrollbar')) {
     });
 }
 
-if (document.querySelector('.personal-main .scrollbar')) {
-    document.querySelectorAll('.personal-main .scrollbar').forEach(el => {
+if (document.querySelector('.history__select.scrollbar')) {
+    document.querySelectorAll('.history__select.scrollbar').forEach(el => {
+        el.addEventListener(
+            'showDropdown',
+            function (event) {
+                new SimpleBar(el.querySelector('.choices__list--dropdown .choices__list'), {
+                    autoHide: false
+                });
+            },
+            false,
+        );
+    });
+}
+
+if (document.querySelector('.personal-main .scrollbar--horizontal')) {
+    document.querySelectorAll('.personal-main .scrollbar--horizontal').forEach(el => {
         new SimpleBar(el, {
             autoHide: false
         });
@@ -95,10 +109,11 @@ if (document.querySelector('.personal-main .scrollbar')) {
 }
 
 
+flatpickr("input[type='date']", {
+});
 
 
-
-document.querySelector('a[href="#reffers"]').click();
+document.querySelector('a[href="#history"]').click();
 
 
 

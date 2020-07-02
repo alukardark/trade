@@ -61,30 +61,6 @@ event('.personal-main__demo-row--header', 'click', function (e) {
     toggleClass(this.nextElementSibling, 'active');
 });
 
-// event('a.accordion-head', 'click', function (e) {
-//     e.preventDefault();
-//     toggleClass(this, 'active');
-//     var $link = this.getAttribute('href');
-//     document.querySelector('.personal-main__btns a[href="'+$link+'"]').click();
-// });
-//
-// event('.personal-main__btns a', 'click', function (e) {
-//     e.preventDefault();
-//     var $link = this.getAttribute('href');
-//     document.querySelector('a.accordion-head[href="'+$link+'"]').parentNode.querySelectorAll('a').forEach(el => {
-//         el.classList.remove('active');
-//     });
-//     document.querySelector('a.accordion-head[href="'+$link+'"]').classList.add('active');
-// });
-
-
-
-
-
-
-
-
-
 
 
 document.addEventListener('click', function (event) {

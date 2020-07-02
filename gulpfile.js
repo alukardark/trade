@@ -23,6 +23,7 @@ gulp.task('scripts', function() {
         'node_modules/choices.js/public/assets/scripts/choices.min.js',
         'node_modules/simplebar/dist/simplebar.min.js',
         'node_modules/tippy.js/dist/tippy.min.js',
+        'node_modules/flatpickr/dist/flatpickr.min.js',
     ])
         .pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
         .pipe(uglify()) // Сжимаем JS файл

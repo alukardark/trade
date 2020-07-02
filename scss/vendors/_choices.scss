@@ -135,7 +135,7 @@
   }
 }
 
-.personal-area__calculator {
+.personal-area__calculator, .history__select {
   .choices {
     margin-bottom: 0;
     display: flex;
@@ -245,6 +245,13 @@
   }
 }
 
+.history__select{
+  .choices {
+    &__inner {
+      text-transform: none;
+    }
+  }
+}
 
 
 @media (max-width: $md) {
@@ -272,7 +279,7 @@
     }
   }
 
-  .personal-area__calculator {
+  .personal-area__calculator, .history__select {
     .choices {
       &__list {
         &--dropdown {
