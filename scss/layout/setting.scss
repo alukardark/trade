@@ -594,7 +594,7 @@
     color: #9C9FA6;
   }
   &__activity{
-    margin-bottom: 70px;
+    margin-bottom: 60px;
   }
   &__activity-row{
     display: flex;
@@ -696,6 +696,24 @@
     }
   }
 
+  &__history{
+    font-size: 13px;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    color: #B01D1E;
+    text-decoration-color: #B01D1E;
+    transition: .2s ease-in-out all;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 110px;
+    margin-top: 25px;
+    display: block;
+    &:hover{
+      color: #000;
+      text-decoration-color: #000;
+    }
+  }
 }
 
 

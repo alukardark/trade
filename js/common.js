@@ -6,6 +6,7 @@ import './login-btn.js';
 import './parallax.js';
 import './hidden-block.js';
 import './deposit-copy.js';
+import './affiliate-link-copy.js';
  // import {accordion} from './squeezebox.js';
 
 
@@ -85,8 +86,8 @@ if (document.querySelector('.personal-area__calculator-col.scrollbar')) {
     });
 }
 
-if (document.querySelector('.accordion-cont .scrollbar')) {
-    document.querySelectorAll('.accordion-cont .scrollbar').forEach(el => {
+if (document.querySelector('.personal-main .scrollbar')) {
+    document.querySelectorAll('.personal-main .scrollbar').forEach(el => {
         new SimpleBar(el, {
             autoHide: false
         });
@@ -97,7 +98,7 @@ if (document.querySelector('.accordion-cont .scrollbar')) {
 
 
 
-document.querySelector('a[href="#setting"]').click();
+document.querySelector('a[href="#reffers"]').click();
 
 
 

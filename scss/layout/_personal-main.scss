@@ -582,7 +582,7 @@
     font-size: 14px;
   }
 
-  &__new-adress {
+  &__new-address {
     font-size: 14px;
     text-transform: uppercase;
     color: #000000;
@@ -660,35 +660,7 @@
     }
   }
 
-  .copied-successfully {
-    font-weight: 500;
-    font-size: 13px;
-    color: #B01D1E;
-    width: 378px;
-    height: 117px;
-    left: 0px;
-    bottom: 0px;
-    position: fixed;
-    z-index: 100;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 64px rgba(0, 0, 0, 0.11);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: .25s ease-in-out all;
-    opacity: 0;
-    visibility: hidden;
-    i {
-      width: 16px;
-      height: 16px;
-      background: url(../img/copied.svg);
-      margin-right: 11px;
-    }
-    &.active {
-      opacity: 1;
-      visibility: visible;
-    }
-  }
+
 
   .scrollbar .personal-main__table {
     min-width: 400px;
@@ -773,6 +745,10 @@
     &__box-row {
       margin-bottom: 30px;
     }
+
+    &__history-btn{
+      margin-top: -20px;
+    }
   }
 }
 
@@ -795,10 +771,7 @@
       padding: 14px 0 14px 20px;
     }
 
-    .copied-successfully {
-      width: 300px;
-      height: 70px;
-    }
+
   }
 
 }
@@ -947,7 +920,7 @@
     &__box-info {
       margin-bottom: 10px;
     }
-    &__new-adress {
+    &__new-address {
       width: 100%;
     }
     &__send {
@@ -957,10 +930,7 @@
       margin-top: 22px;
     }
 
-    .copied-successfully {
-      width: 100%;
-      height: 50px;
-    }
+
 
   }
 

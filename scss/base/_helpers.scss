@@ -38,6 +38,18 @@
 }
 
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.wrapper-content {
+  flex: 1 0 auto;
+}
+
+
+
+
 @-webkit-keyframes tape {
   0% {
     background-position-x: 0;

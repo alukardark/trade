@@ -19,7 +19,7 @@ if (button) {
     }, false);
 };
 
-event('.personal-main__new-adress', 'click', function (e) {
+event('.personal-main__new-address', 'click', function (e) {
     button.classList.remove('personal-main__deposit-copy--ok');
 });
 
