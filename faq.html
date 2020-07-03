@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <title>Bug bounty</title>
+    <title>Platform</title>
     <meta name="author" content="web-studio">
     <meta name="description" content="">
     <meta name="keywords" content="">
@@ -13,16 +13,17 @@
 </head>
 <body>
 
-
 <div class="header wow fadeInDown" data-wow-delay=".0s" data-wow-duration=".6s">
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12 position-static">
+
                 <div class="header__row">
                     <a href="/" class="header__logo"></a>
+
                     <ul class="header__nav d-none d-lg-flex">
                         <li><a href="lk_trade.html">Conditions</a></li>
-                        <li><a href="platform.html">Platforms</a></li>
+                        <li><a href="platform.html" class="active">Platforms</a></li>
                         <li><a href="referal.html">Refer</a></li>
                         <li><a href="deposit-&-withdraw.html">Deposit & Withdraw</a></li>
                         <li><a href="about.html">About Us</a></li>
@@ -32,15 +33,16 @@
                     <div class="header__mobile-menu d-lg-none">
                         <ul class="header__nav">
                             <li><a href="lk_trade.html">Conditions</a></li>
-                            <li><a href="platform.html">Platforms</a></li>
+                            <li><a href="platform.html" class="active">Platforms</a></li>
                             <li><a href="referal.html">Refer</a></li>
                             <li><a href="deposit-&-withdraw.html">Deposit & Withdraw</a></li>
                             <li><a href="about.html">About Us</a></li>
                             <li><a href="faq.html">FAQ</a></li>
                         </ul>
+                        <a href="#" class="header__register d-sm-none">Register</a>
                     </div>
 
-                    <div class="header__profile header__profile--lk">
+                    <div class="header__profile">
                         <div class="header__lng">
                             <div class="header__lng--current">en</div>
 
@@ -49,14 +51,8 @@
                                 <li><a href="#">uk</a></li>
                             </ul>
                         </div>
-                        <div class="header__login">
-                            <div class="header__login-amount">$0,00</div>
-
-                            <ul class="header__login-list">
-                                <li class="header__login-login"><a href="#">***de@gmail.com</a></li>
-                                <li class="header__login-exit"><a href="#">Exit</a></li>
-                            </ul>
-                        </div>
+                        <a href="#" class="header__login">Log in</a>
+                        <a href="#" class="header__register d-none d-sm-flex">Register</a>
                         <div class="burger">
                             <span></span>
                         </div>
@@ -69,99 +65,50 @@
 
 <div class="overlayout">
 
-    <div class="bug-bounty wow fadeIn">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1>Bug Bounty</h1>
 
-                    <p>We prioritize security of our client’s funds. We strive to give our users the best experience
-                        possible, also providing access to some of the latest technologies available.
-                    </p>
-                    <img class="bug-bounty__img" src="img/bug-bounty.png" alt="">
-
-                    <div class="paragraph big-text">
-                        <p>Policy:</p>
-                        <p class="min-text">
-                            At Chaos Trade, the security of our users is our number one priority. As such, we strive to
-                            provide the most secure platform possible. We will evaluate reported security issues based
-                            on the security impact to our users.
-                            <br>
-                            This bounty brief describes the rules of the Chaos Trade bug bounty program, as well as the
-                            eligibility of vulnerabilities and the rewards.
-                        </p>
-                    </div>
-
-                    <div class="paragraph big-text">
-                        <p>Rewards:</p>
-                        <p class="min-text">
-                            Rewards will be paid out in USDt.
-                            <br>
-                            Once your submission is accepted, please provide either of the following to receive your
-                            reward.
-                        </p>
-                        <p>
-                            <strong>
-                                email address registered on Chaos-Trade
-                                your USDt wallet address
-                            </strong>
-                        </p>
-                    </div>
-
-                    <div class="bug-bounty__attention">
-                        Please note that only vulnerabilities with a working proof of concept that shows how it can be
-                        exploited will be considered eligible for monetary rewards.
-                    </div>
-
-                    <h3>Reward range</h3>
-                    <p>Last updated 1 Jun 2020 04:53:47 UTC</p>
-
-                    <div class="bug-bounty__table">
-                        <div class="bug-bounty__row">
-                            <div class="bug-bounty__col">
-                                Technical severity
-                            </div>
-                            <div class="bug-bounty__col">
-                                Reward range
-                            </div>
-                        </div>
-
-                        <div class="bug-bounty__row">
-                            <div class="bug-bounty__col">
-                                <i>P1</i> — Critical
-                            </div>
-                            <div class="bug-bounty__col">
-                                5 000 $ - 10 000 $
-                            </div>
-                        </div>
-                        <div class="bug-bounty__row">
-                            <div class="bug-bounty__col">
-                                <i>P2</i> — Severe
-                            </div>
-                            <div class="bug-bounty__col">
-                                1 5000 $ - 5 000$
-                            </div>
-                        </div>
-                        <div class="bug-bounty__row">
-                            <div class="bug-bounty__col">
-                                <i>P3</i> — Moderate
-                            </div>
-                            <div class="bug-bounty__col">
-                                600 $ - 1 500$
-                            </div>
-                        </div>
-                        <div class="bug-bounty__row">
-                            <div class="bug-bounty__col">
-                                <i>P4</i> — Low
-                            </div>
-                            <div class="bug-bounty__col">
-                                200$ - 600$
-                            </div>
-                        </div>
-                    </div>
-
-                    <p class="bug-bounty__footer">P5 submissions do not receive any rewards for this program.</p>
-                </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <style>
+                    main{
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: space-between;
+                    }
+                    article {
+                        display: block;
+                        background: #fff;
+                    }
+                    aside {
+                        display: block;
+                        background: #cdc;
+                        right: 0;
+                        top: 0;
+                        width: 200px;
+                    }
+                </style>
+                <main>
+                    <article id="article">
+                        Блок приклеивается во время прокрутки страницы. Но перед футером останавливается.
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        Блок приклеивается во время прокрутки страницы. Но перед футером останавливается.
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        Блок приклеивается во время прокрутки страницы. Но перед футером останавливается.
+                    </article>
+                    <aside id="aside1">
+                        xxx
+                        <br>
+                        xxx
+                        <br>
+                        xxx
+                    </aside>
+                </main>
             </div>
         </div>
     </div>
@@ -177,7 +124,7 @@
                         <a href="/" class="footer__logo"></a>
                         <ul class="footer__nav d-none d-lg-flex">
                             <li><a href="lk_trade.html">Conditions</a></li>
-                            <li><a href="platform.html">Platforms</a></li>
+                            <li><a href="platform.html" class="active">Platforms</a></li>
                             <li><a href="referal.html">Refer</a></li>
                             <li><a href="deposit-&-withdraw.html">Deposit & Withdraw</a></li>
                             <li><a href="about.html">About Us</a></li>
@@ -187,7 +134,7 @@
                     <div class="footer__mobile-menu d-lg-none">
                         <ul class="footer__nav">
                             <li><a href="lk_trade.html">Conditions</a></li>
-                            <li><a href="platform.html">Platforms</a></li>
+                            <li><a href="platform.html" class="active">Platforms</a></li>
                             <li><a href="referal.html">Refer</a></li>
                             <li><a href="deposit-&-withdraw.html">Deposit & Withdraw</a></li>
                             <li><a href="about.html">About Us</a></li>
