@@ -1,0 +1,135 @@
+.documentation{
+  h1{
+    &+img{
+      float: right;
+      height: 185px;
+      width: 450px;
+    }
+  }
+
+  &__desc{
+      font-weight: 500;
+      font-size: 16px;
+      max-width: 780px;
+    }
+
+  &__btns {
+    display: flex;
+    margin-bottom: 50px;
+    margin-top: 75px;
+    li{
+      &:last-of-type{
+        a{
+          border-right: 1px solid #000000;
+        }
+      }
+    }
+    a {
+      width: 153px;
+      border-top: 1px solid #000000;
+      border-bottom: 1px solid #000000;
+      border-left: 1px solid #000000;
+      height: 42px;
+      background: #fff;
+      font-weight: 500;
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+      text-transform: uppercase;
+      color: #000000;
+      transition: .2s ease-in-out all;
+      justify-content: center;
+      &.active{
+        background: #000;
+        color: #fff;
+        pointer-events: none;
+      }
+      &:hover{
+        background: #000;
+        color: #fff;
+      }
+  }
+
+  }
+
+  &__desc{
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .accordion-head{
+    display: none;
+  }
+}
+
+@media (max-width: $xl) {
+  .documentation{
+    h1{
+      &+img{
+        height: 185px;
+        width: 300px;
+      }
+    }
+  }
+}
+@media (max-width: $lg) {
+  .documentation{
+    h1{
+      &+img{
+        height: 145px;
+        width: 200px;
+      }
+    }
+  }
+}
+@media (max-width: $md) {
+  .documentation{
+    h1{
+      &+img{
+        float: none;
+        display: none;
+      }
+    }
+    &__btns  {
+      li{
+        width: 25%;
+      }
+
+    }
+
+    .accordion-head{
+        display: flex;
+        font-weight: bold;
+        font-size: 13px;
+        text-transform: uppercase;
+        align-items: center;
+        justify-content: center;
+        height: 44px;
+        transition: .2s ease-in-out all;
+        border-top: 1px solid #000000;
+        border-left: 1px solid #000000;
+        border-right: 1px solid #000000;
+        position: relative;
+        &:last-of-type{
+          border-bottom: 1px solid #000000;
+        }
+        &.active{
+          color: #fff;
+          background: #000;
+        }
+        &:after{
+          content: '';
+          width: 10px;
+          height: 10px;
+          position: absolute;
+          top: 16px;
+          right: 15px;
+          transform: rotate(180deg);
+          background: url(../img/arrow-b-white.svg) center/contain no-repeat;
+        }
+      }
+  }
+  .accordion-cont {
+    padding: 40px 0 15px;
+  }
+}

@@ -37,6 +37,10 @@
   }
 }
 
+.min-text, .min-text p{
+  font-size: 16px;
+}
+
 
 .wrapper {
   display: flex;
@@ -57,6 +61,30 @@
   z-index: 101;
 }
 
+.list-markers{
+  margin-bottom: 25px;
+  margin-top: 25px;
+  li{
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    font-size: 16px;
+    &:before{
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: 0px;
+      width: 5px;
+      height: 5px;
+      background: #B01D1E;
+      transform: rotate(45deg);
+    }
+    &:last-of-type{
+      margin-bottom: 0;
+    }
+  }
+
+}
 
 
 
@@ -93,5 +121,9 @@
     &:before{
       top: 9px;
     }
+    .min-text, .min-text p{
+      font-size: 14px !important;
+    }
+
   }
 }
