@@ -20,14 +20,12 @@
 @import "node_modules/simplebar/dist/simplebar.min";
 @import "vendors/simplebar";
 @import "node_modules/tippy.js/dist/tippy";
+@import "vendors/tippy";
 @import "node_modules/tippy.js/dist/themes/light";
 @import "node_modules/flatpickr/dist/flatpickr.min";
 //@import "node_modules/badger-accordion/dist/badger-accordion";
 
-.tippy-tooltip.light-theme{
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
+
 
 // 3. Base stuff
 @import
@@ -73,13 +71,8 @@
 'components/parallax',
 'components/accordion',
 'components/copied-successfully',
-'components/back';
-//'components/hamburger',
+'components/back',
+'components/breadcrumbs';
 //'components/modal',
-//'components/link-footer',
 //'components/modal-development',
 //'components/spinner';
-//
-//// 7. Themes
-//@import 'themes/default';
-

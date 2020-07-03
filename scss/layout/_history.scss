@@ -29,16 +29,20 @@
   &__box-wrap{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
   }
 
   &__box{
-    width: 50%;
+
     &:first-of-type{
       border-right: 1px solid #EAEAEA;
       padding-right: 55px;
+      width: 45%;
     }
     &:last-of-type{
       padding-left: 40px;
+      width: 55%;
     }
   }
   &__title-add{
@@ -48,11 +52,15 @@
     color: #040404;
     margin-bottom: 15px;
     &--1{
-
+      margin-bottom: 83px;
     }
   }
   &__select{
     margin-bottom: 20px;
+    &.disabled{
+      opacity: .5;
+      pointer-events: none;
+    }
   }
   &__box-table{
     display: flex;
@@ -90,8 +98,16 @@
   &__box-column{
     display: flex;
     flex-direction: column;
+    width: 120px;
     &:nth-of-type(2){
       width: 425px;
+      padding-top: 30px;
+    }
+  }
+  &__radio-btns{
+    position: relative;
+    label{
+      margin-bottom: 40px;
     }
   }
   label{
@@ -99,8 +115,10 @@
     font-size: 14px;
     color: #000000;
     position: relative;
-    cursor: pointer;
+    //cursor: pointer;
+
     i{
+      cursor: pointer;
       margin-right: 4px;
       margin-top: -3px;
       display: inline-block;
@@ -148,19 +166,25 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+    flex-wrap: wrap;
     input{
       width: 100%;
       height: 100%;
       border: 1px solid #D7D7D7;
       padding: 0 30px 0 10px;
     }
+    &.disabled{
+      pointer-events: none;
+      opacity: .6;
+    }
   }
   &__date-wrap{
-    width: 200px;
+    width: 205px;
     height: 44px;
     position: relative;
     margin-bottom: 0;
     &:after{
+      cursor: pointer;
       content: '';
       position: absolute;
       top: 50%;
@@ -215,6 +239,10 @@
         margin: 0;
       }
     }
+    &.disabled{
+      opacity: .3;
+      pointer-events: none;
+    }
   }
   &__download-file{
     width: 205px;
@@ -233,12 +261,260 @@
       padding-left: 10px;
       border-left: 1px solid rgba(255, 255, 255, 0.2);
     }
-
     &:hover{
       border-color: #3A3A3A;
       color: #040404;
       background: transparent;
 
+    }
+    &.disabled{
+      opacity: .3;
+      pointer-events: none;
+    }
+    &--footer{
+      position: absolute;
+      top: -14px;
+      right: 0;
+    }
+  }
+  &__footer{
+    margin-top: 45px;
+    position: relative;
+  }
+
+
+  &__table-wrap{
+    width: 100%;
+    padding-top: 40px;
+  }
+  &__table-title{
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 20px;
+  }
+  &__table{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 400px;
+  }
+  &__table-row{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 0 28px 20px;
+    border-bottom: 1px solid #E4E4E4;
+    &--header{
+      height: 44px;
+      border-bottom: none;
+      background: #F5F5F5;
+      padding-top: 0;
+      padding-bottom: 0;
+      .history__table-col{
+        font-weight: 500;
+        font-size: 15px;
+        color: #A4A4A4;
+      }
+    }
+
+  }
+  &__table-col{
+    width: calc(100% / 5);
+    font-weight: 500;
+    font-size: 15px;
+    color: #000;
+    line-height: 1.2;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 15px;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: $xl) {
+  .history{
+    &__wrap{
+      padding: 35px 15px 35px;
+    }
+    &__box-column {
+      &:nth-of-type(2){
+        width: 330px;
+      }
+    }
+    &__date-wrap {
+      width: 160px;
+    }
+    &__view-btn {
+      width: 160px;
+    }
+    &__download-file{
+      &:not(.history__download-file--footer){
+      width: 160px;
+    }
+
+    }
+  }
+}
+@media (max-width: $lg) {
+  .history{
+    &__wrap{
+      padding: 25px 0 35px;
+    }
+    &__box-wrap{
+      flex-direction: column;
+    }
+    &__table-wrap {
+
+    }
+    &__box{
+      width: calc(100% - 120px) !important;
+      padding: 0;
+      margin: 0 60px;
+      &:nth-of-type(1){
+        padding-right: 0;
+        border-right: none;
+        padding-bottom: 50px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #EAEAEA;
+      }
+    }
+    &__box-column {
+      &:nth-of-type(2){
+        width: 425px;
+      }
+    }
+    &__date-wrap {
+      width: 205px;
+    }
+    &__view-btn {
+      width: 205px;
+    }
+    &__download-file{
+      &:not(.history__download-file--footer){
+        width: 205px;
+      }
+      &--footer{
+        display: none;
+      }
+
+    }
+    &__title{
+      margin-left: 60px;
+    }
+    &__table-title{
+      margin-left: 20px;
+    }
+    &__table-row{
+      padding: 10px 0 10px 20px;
+      &:last-of-type{
+      }
+    }
+    &__footer {
+      margin-top: 35px;
+    }
+  }
+}
+@media (max-width: $md) {
+  .history{
+    &__box{
+      width: calc(100% - 40px) !important;
+      margin: 0 20px;
+      &:nth-of-type(1){
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+    }
+    &__title-add{
+      &--1{
+        margin-bottom: 10px;
+      }
+    }
+    &__select{
+      margin-bottom: 25px;
+    }
+    &__radio-btns  {
+      label{
+        margin-bottom: 10px;
+      }
+
+    }
+    &__title{
+      margin-left: 20px;
+    }
+    &__box-column-wrap{
+      flex-direction: column;
+    }
+    &__date-wrap {
+      width: 49%;
+    }
+    &__view-btn {
+      width: 49%;
+    }
+    &__download-file{
+      &:not(.history__download-file--footer){
+        width: 49%;
+      }
+    }
+    &__box-column{
+      &:nth-of-type(1){
+        display: none;
+      }
+      &:nth-of-type(2){
+        width: 100%;
+      }
+
+    }
+
+
+  }
+}
+@media (max-width: $sm) {
+  .history{
+    &__title{
+      margin-left: 0;
+    }
+    &__wrap{
+      border-left: none;
+      border-right: none;
+      border-bottom: none;
+      padding: 20px 0 0;
+    }
+    &__box{
+      width: 100% !important;
+      margin: 0;
+      &:nth-of-type(1){
+        margin-bottom: 10px;
+      }
+    }
+    &__table-row{
+      padding: 14px 0 14px 5px;
+    }
+    &__table-col{
+      font-size: 13px;
+    }
+
+    &__btns{
+      flex-direction: column;
+    }
+    &__view-btn{
+      width: 100%;
+      margin-bottom: 15px;
+    }
+    &__download-file{
+      width: 100% !important;
+    }
+    &__table-title{
+      margin-left: 0;
+    }
+    &__select {
+      margin-bottom: 15px;
+    }
+    &__box-col{
+      font-size: 14px;
     }
   }
 }

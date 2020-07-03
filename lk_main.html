@@ -126,7 +126,7 @@
 
                                         <div class="personal-main__links">
                                             <a href="#" class="personal-main__add-funds">Add funds</a>
-                                            <a href="#" class="personal-main__history">Trading history</a>
+                                            <a href="#history" class="personal-main__history accordion-toggle">Trading history</a>
                                         </div>
                                         <div class="personal-main__total">
                                             <div class="personal-main__total-title">Total</div>
@@ -306,7 +306,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <a href="#" class="personal-main__history-btn">full history</a>
+                                <a href="#history" class="personal-main__history-btn accordion-toggle">full history</a>
                             </div>
 
                             <a href="#setting" class="accordion-head accordion-toggle">setting</a>
@@ -544,7 +544,7 @@
                                                         <strong>Withdrawed</strong>
                                                     </div>
                                                 </div>
-                                                <a href="#" class="setting__history">full history</a>
+                                                <a href="#history" class="setting__history accordion-toggle">full history</a>
                                             </div>
 
 
@@ -739,7 +739,7 @@
                                         </div>
                                         </div>
                                     </div>
-                                    <a href="#" class="reffers__history-btn">
+                                    <a href="#history" class="reffers__history-btn accordion-toggle">
                                         full history
                                     </a>
 
@@ -758,7 +758,7 @@
                                             <div class="history__title">history</div>
 
                                             <div class="history__box-wrap">
-                                                <div class="history__box">
+                                                <div class="history__box ">
                                                     <div class="history__title-add">
                                                         select account
                                                     </div>
@@ -793,21 +793,23 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="history__box">
-                                                    <form action="">
+                                                <div class="history__box ">
+                                                    <form action="#">
                                                         <div class="history__box-column-wrap">
                                                             <div class="history__box-column">
                                                                 <div class="history__title-add history__title-add--1">SHOW</div>
 
-                                                                <input id="predefined" name="show" type="radio" value="Predefined" checked>
-                                                                <label for="predefined"><i></i> Predefined</label>
-
-                                                                <input id="custom" name="show" type="radio" value="Custom">
-                                                                <label for="custom"><i></i> Custom</label>
+                                                                <div class="history__radio-btns">
+                                                                    <input id="predefined" name="show" type="radio" value="Predefined" checked>
+                                                                    <label for="predefined"><i></i> Predefined</label>
+                                                                    <input id="custom" name="show" type="radio" value="Custom">
+                                                                    <label for="custom"><i></i> Custom</label>
+                                                                </div>
 
                                                                 <div class="history__title-add history__title-add--2">TYPE</div>
                                                             </div>
                                                             <div class="history__box-column">
+                                                                <div class="history__title-add history__title-add--1 d-md-none">SHOW</div>
                                                                 <div class="history__select scrollbar">
                                                                     <select id="transactions" class="js-choice js-choice--default">
                                                                         <option value="Transactions">Transactions</option>
@@ -819,19 +821,27 @@
                                                                         <option value="Transactions">Transactions</option>
                                                                     </select>
                                                                 </div>
-                                                                <div class="history__select scrollbar">
+                                                                <div class="history__radio-btns d-md-none">
+                                                                    <input id="predefined2" name="show2" type="radio" value="Predefined" checked>
+                                                                    <label for="predefined2"><i></i> Predefined</label>
+                                                                </div>
+                                                                <div class="history__select scrollbar" id="predefined-span">
                                                                     <select class="js-choice js-choice--default">
                                                                         <option value="24-hours">24 hours</option>
                                                                         <option value="24-hours">24 hours</option>
                                                                         <option value="24-hours">24 hours</option>
                                                                     </select>
                                                                 </div>
+                                                                <div class="history__radio-btns d-md-none">
+                                                                    <input id="custom2" name="show2" type="radio" value="Custom">
+                                                                    <label for="custom2"><i></i> Custom</label>
+                                                                </div>
                                                                 <div class="history__date">
-                                                                    <label class="history__date-wrap">
-                                                                        <input type="date" >
+                                                                    <label for="date-start" class="history__date-wrap">
+                                                                        <input id="date-start" type="date" >
                                                                     </label>
-                                                                    <label class="history__date-wrap">
-                                                                        <input type="date">
+                                                                    <label for="date-end" class="history__date-wrap">
+                                                                        <input id="date-end" type="date">
                                                                     </label>
                                                                 </div>
                                                                 <div class="history__select scrollbar">
@@ -851,6 +861,98 @@
                                                         </div>
                                                     </form>
                                                 </div>
+
+                                                <div class="history__table-wrap ">
+                                                    <div class="history__table-title">Over the last 2 months</div>
+                                                    <div class="scrollbar scrollbar--horizontal">
+                                                        <div class="history__table">
+                                                            <div class="history__table-row history__table-row--header">
+                                                                <div class="history__table-col">Date</div>
+                                                                <div class="history__table-col">Type</div>
+                                                                <div class="history__table-col">Description</div>
+                                                                <div class="history__table-col">Period</div>
+                                                                <div class="history__table-col">Closing</div>
+                                                                <div class="history__table-col">Amount</div>
+                                                            </div>
+                                                            <div class="history__table-row">
+                                                                <div class="history__table-col">01.05.2020</div>
+                                                                <div class="history__table-col">WTH</div>
+                                                                <div class="history__table-col">Funds Transfer to Main</div>
+                                                                <div class="history__table-col">—</div>
+                                                                <div class="history__table-col">0</div>
+                                                                <div class="history__table-col">$-8,500.00 44224455</div>
+                                                            </div>
+                                                            <div class="history__table-row">
+                                                                <div class="history__table-col">01.05.2020</div>
+                                                                <div class="history__table-col">DEPO</div>
+                                                                <div class="history__table-col">Funds Transfer to Main</div>
+                                                                <div class="history__table-col">—</div>
+                                                                <div class="history__table-col">0</div>
+                                                                <div class="history__table-col">$-8,500.00 44224455</div>
+                                                            </div>
+                                                            <div class="history__table-row">
+                                                                <div class="history__table-col">01.05.2020</div>
+                                                                <div class="history__table-col">WTH</div>
+                                                                <div class="history__table-col">Funds Transfer to Main</div>
+                                                                <div class="history__table-col">—</div>
+                                                                <div class="history__table-col">0</div>
+                                                                <div class="history__table-col">$-8,500.00 44224455</div>
+                                                            </div>
+                                                            <div class="history__table-row">
+                                                                <div class="history__table-col">01.05.2020</div>
+                                                                <div class="history__table-col">DEPO</div>
+                                                                <div class="history__table-col">Funds Transfer to Main</div>
+                                                                <div class="history__table-col">—</div>
+                                                                <div class="history__table-col">0</div>
+                                                                <div class="history__table-col">$-8,500.00 44224455</div>
+                                                            </div>
+                                                            <div class="history__table-row">
+                                                                <div class="history__table-col">01.05.2020</div>
+                                                                <div class="history__table-col">WTH</div>
+                                                                <div class="history__table-col">Funds Transfer to Main</div>
+                                                                <div class="history__table-col">—</div>
+                                                                <div class="history__table-col">0</div>
+                                                                <div class="history__table-col">$-8,500.00 44224455</div>
+                                                            </div>
+                                                            <div class="history__table-row">
+                                                                <div class="history__table-col">01.05.2020</div>
+                                                                <div class="history__table-col">DEPO</div>
+                                                                <div class="history__table-col">Funds Transfer to Main</div>
+                                                                <div class="history__table-col">—</div>
+                                                                <div class="history__table-col">0</div>
+                                                                <div class="history__table-col">$-8,500.00 44224455</div>
+                                                            </div>
+                                                            <div class="history__table-row">
+                                                                <div class="history__table-col">01.05.2020</div>
+                                                                <div class="history__table-col">WTH</div>
+                                                                <div class="history__table-col">Funds Transfer to Main</div>
+                                                                <div class="history__table-col">—</div>
+                                                                <div class="history__table-col">0</div>
+                                                                <div class="history__table-col">$-8,500.00 44224455</div>
+                                                            </div>
+                                                            <div class="history__table-row">
+                                                                <div class="history__table-col">01.05.2020</div>
+                                                                <div class="history__table-col">DEPO</div>
+                                                                <div class="history__table-col">Funds Transfer to Main</div>
+                                                                <div class="history__table-col">—</div>
+                                                                <div class="history__table-col">0</div>
+                                                                <div class="history__table-col">$-8,500.00 44224455</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="history__footer">
+                                                        <ul class="breadcrumbs">
+                                                            <li><a href="#" class="active">1</a></li>
+                                                            <li><a href="#">2</a></li>
+                                                            <li><a href="#">3</a></li>
+                                                            <li><a href="#">4</a></li>
+                                                        </ul>
+
+                                                        <a href="#" class="history__download-file history__download-file--footer">DOWNLOAD <span>PDF</span></a>
+                                                    </div>
+                                                </div>
+
                                             </div>
                                         </div>
 

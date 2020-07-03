@@ -7,19 +7,41 @@ import './parallax.js';
 import './hidden-block.js';
 import './deposit-copy.js';
 import './affiliate-link-copy.js';
- // import {accordion} from './squeezebox.js';
+import './radio-button.js';
 
 
 
 new WOW().init({
     mobile: false,
 });
-
-// window.addEventListener('load', function () {
-//     if (document.querySelector('.accordion') !== null) {
-//         accordion();
-//         // document.querySelector('.accordion-head.open').click();
 //
+// MicroModal.init({
+//     openTrigger: 'data-custom-open',
+//     disableScroll: true,
+//     disableFocus: true,
+//     awaitCloseAnimation: true,
+//     onShow: function (modal) {
+//
+//         let modalClass = modal.id + $i;
+//
+//         if (document.querySelector('#' + modal.id).classList.contains('modal-website-development')) {
+//             if (modalClass == modal.id + '1') {
+//                 accordion("." + modal.id);
+//                 document.querySelector('.' + modal.id).classList.add('active');
+//                 $i++;
+//             } else {
+//                 if (!document.querySelector('.' + modal.id).classList.contains('active')) {
+//                     accordion("." + modal.id);
+//                     document.querySelector('.' + modal.id).classList.add('active');
+//                     $i++;
+//                 }
+//             }
+//         }
+//
+//         if (modal.id == 'feedback') {
+//             let $text = document.querySelector('.feedback-form .checkbox-list--discount').textContent;
+//             document.querySelector('.modal-feedback-form .checkbox-list--discount').textContent = $text;
+//         }
 //     }
 // });
 
@@ -109,11 +131,43 @@ if (document.querySelector('.personal-main .scrollbar--horizontal')) {
 }
 
 
-flatpickr("input[type='date']", {
+flatpickr("input[type='date']", {});
+
+function goUp() {
+
+}
+
+
+
+var smoothJumpUp = function() {
+    if (document.body.scrollTop>0 || document.documentElement.scrollTop>0) {
+        window.scrollBy(0,-25);
+        setTimeout(smoothJumpUp, 10);
+    }
+};
+event('a[href="#history"]', 'click', function (e) {
+    smoothJumpUp();
 });
 
 
-document.querySelector('a[href="#history"]').click();
 
 
 
+// //Плавная прокрутка
+// const anchors = document.querySelectorAll('a[href*="#"]');
+//
+// for (let anchor of anchors) {
+//     if (!anchor.classList.contains('questions__tab')) {
+//         anchor.addEventListener('click', function (e) {
+//             e.preventDefault();
+//
+//             let blockID = anchor.getAttribute('href');
+//             blockID = blockID.substring(blockID.lastIndexOf("#"));
+//
+//             document.querySelector('' + blockID).scrollIntoView({
+//                 behavior: 'smooth',
+//                 block: 'start'
+//             })
+//         })
+//     }
+// }
