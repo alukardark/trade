@@ -15,36 +15,19 @@ import './sidebar-sticky.js';
 new WOW().init({
     mobile: false,
 });
-//
-// MicroModal.init({
-//     openTrigger: 'data-custom-open',
-//     disableScroll: true,
-//     disableFocus: true,
-//     awaitCloseAnimation: true,
-//     onShow: function (modal) {
-//
-//         let modalClass = modal.id + $i;
-//
-//         if (document.querySelector('#' + modal.id).classList.contains('modal-website-development')) {
-//             if (modalClass == modal.id + '1') {
-//                 accordion("." + modal.id);
-//                 document.querySelector('.' + modal.id).classList.add('active');
-//                 $i++;
-//             } else {
-//                 if (!document.querySelector('.' + modal.id).classList.contains('active')) {
-//                     accordion("." + modal.id);
-//                     document.querySelector('.' + modal.id).classList.add('active');
-//                     $i++;
-//                 }
-//             }
-//         }
-//
-//         if (modal.id == 'feedback') {
-//             let $text = document.querySelector('.feedback-form .checkbox-list--discount').textContent;
-//             document.querySelector('.modal-feedback-form .checkbox-list--discount').textContent = $text;
-//         }
-//     }
-// });
+
+MicroModal.init({
+    openTrigger: 'data-custom-open',
+    disableScroll: true,
+    disableFocus: true,
+    awaitCloseAnimation: true,
+    onShow: function (modal) {
+        document.querySelector('.wrapper').classList.add('blur');
+    },
+    onClose: function (modal) {
+        document.querySelector('.wrapper').classList.remove('blur');
+    }
+});
 
 
 
