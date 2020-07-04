@@ -31,7 +31,7 @@ event('.personal-area__btns-filter *', 'click', function (e) {
 });
 
 event('.personal-area__table-row', 'click', function (e) {
-    e.preventDefault();
+    // e.preventDefault();
 
     toggleClass(this, 'active');
 
