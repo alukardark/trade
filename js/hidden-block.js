@@ -66,7 +66,7 @@ var thisHash = location.hash;
 var content = '';
 var accordions = '';
 
-if (thisHash != '' &&  document.querySelector('.accordion-toggle')) {
+if (thisHash != '' &&  document.querySelector('a[href="'+ thisHash +'"]')) {
     content = document.querySelector(thisHash);
     document.querySelectorAll('.accordion-toggle').forEach(el => {
         el.classList.remove('active');
