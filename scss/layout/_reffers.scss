@@ -177,7 +177,7 @@
     justify-content: center;
     height: 44px;
     width: 100%;
-    padding: 0 15px;
+    padding: 3px 15px 0;
     transition: .2s ease-in-out all;
     position: relative;
     &:before{
@@ -270,6 +270,7 @@
     }
   }
   &__transfer{
+    padding-top: 3px;
     font-weight: 500;
     font-size: 14px;
     text-transform: uppercase;

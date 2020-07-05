@@ -212,6 +212,7 @@
       color: #000000;
       background: transparent;
       transition: .2s ease-in-out all;
+      padding-top: 3px;
     }
     &:before {
       content: '';
@@ -255,6 +256,7 @@
     justify-content: center;
     border: 1px solid transparent;
     transition: .2s ease-in-out all;
+    padding-top: 3px;
     span {
       margin-left: 10px;
       padding-left: 10px;

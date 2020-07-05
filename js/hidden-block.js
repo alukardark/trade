@@ -46,12 +46,12 @@ event('.personal-area__table-row', 'click', function (e) {
 });
 
 event('.personal-main__hidden-menu-btn', 'click', function (e) {
-    if(!this.nextElementSibling.classList.contains('active')){
+    if (!this.nextElementSibling.classList.contains('active')) {
         document.querySelectorAll('.personal-main__hidden-menu.active').forEach(el => {
             el.classList.remove('active');
         });
         this.nextElementSibling.classList.add('active');
-    }else{
+    } else {
         this.nextElementSibling.classList.remove('active');
     }
 });
@@ -62,15 +62,36 @@ event('.personal-main__demo-row--header', 'click', function (e) {
 });
 
 
+var thisHash = location.hash;
+var content = '';
+var accordions = '';
+
+if (thisHash != '' &&  document.querySelector('.accordion-toggle')) {
+    content = document.querySelector(thisHash);
+    document.querySelectorAll('.accordion-toggle').forEach(el => {
+        el.classList.remove('active');
+    });
+
+    document.querySelectorAll('a[href="'+ thisHash +'"]').forEach(el => {
+        el.classList.add('active');
+    });
+
+    accordions = document.querySelectorAll('.accordion-cont.active');
+    for (var i = 0; i < accordions.length; i++) {
+        accordions[i].classList.remove('active');
+    }
+    content.classList.toggle('active');
+}
 
 document.addEventListener('click', function (event) {
     if (!event.target.classList.contains('accordion-toggle')) return;
 
-    var content = document.querySelector(event.target.hash);
+    content = document.querySelector(event.target.hash);
 
-    if(event.target.classList.contains('active')){
+
+    if (event.target.classList.contains('active')) {
         event.target.classList.remove('active');
-    }else{
+    } else {
         document.querySelectorAll('.accordion-toggle').forEach(el => {
             el.classList.remove('active');
         });
@@ -86,13 +107,12 @@ document.addEventListener('click', function (event) {
         return;
     }
 
-    var accordions = document.querySelectorAll('.accordion-cont.active');
+    accordions = document.querySelectorAll('.accordion-cont.active');
     for (var i = 0; i < accordions.length; i++) {
         accordions[i].classList.remove('active');
     }
     content.classList.toggle('active');
 });
-
 
 
 document.addEventListener('click', function (event) {
@@ -101,11 +121,10 @@ document.addEventListener('click', function (event) {
     var content = document.querySelector(event.target.hash);
 
 
-
-    if(event.target.classList.contains('active')){
+    if (event.target.classList.contains('active')) {
         event.target.classList.remove('active');
         event.target.parentNode.classList.remove('active');
-    }else{
+    } else {
         document.querySelectorAll('.setting-toggle').forEach(el => {
             el.classList.remove('active');
         });
