@@ -181,5 +181,4 @@ event('.personal-main__wrap .back', 'click', function (e) {
 });
 
 
-document.querySelector('.transfer-btn').click();
 

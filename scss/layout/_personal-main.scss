@@ -64,8 +64,9 @@
   }
   &__table {
     width: 100%;
-    margin-right: 75px;
+    padding-right: 75px;
     padding-bottom: 30px;
+    border-right: 1px solid #E9E9E9;
     display: none;
     &.active {
       display: block;
@@ -205,8 +206,6 @@
   &__news {
     min-width: 180px;
     padding-left: 35px;
-    border-left: 1px solid #E9E9E9;
-    margin-top: -20px;
   }
   &__news-title {
     font-weight: bold;
@@ -669,7 +668,7 @@
 
   &__transfer {
     width: 100%;
-    margin-right: 75px;
+    padding-right: 75px;
     display: none;
 
     &.active {
@@ -706,6 +705,7 @@
     font-size: 13px;
     text-transform: uppercase;
     color: #919191;
+    margin-bottom: 15px;
   }
 
   &__transfer-box-wrap {
@@ -716,7 +716,7 @@
     display: flex;
     flex-direction: column;
     width: 50%;
-    max-width: 300px;
+    max-width: 320px;
     position: relative;
     &:first-of-type{
       &:after{
@@ -724,8 +724,8 @@
         width: 30px;
         height: 27px;
         position: absolute;
-        top: 0;
-        right: -111px;
+        top: 40px;
+        right: -90px;
         background: url(../img/left-right.svg) center/contain no-repeat;
       }
     }
@@ -735,6 +735,7 @@
     font-size: 13px;
     text-transform: uppercase;
     color: #040404;
+    margin-bottom: 10px;
   }
   &__transfer-select {
     margin-bottom: 20px;
@@ -743,6 +744,7 @@
   &__transfer-table {
     display: flex;
     flex-direction: column;
+    margin-bottom: 35px;
   }
   &__transfer-row {
     border-bottom: 1px solid #F5F5F5;
@@ -764,8 +766,6 @@
   }
 
   &__transfer-form {
-
-
     form{
       width: 100%;
       display: flex;
@@ -796,6 +796,8 @@
       padding-top: 3px;
       border: #000 1px solid;
       transition: .2s ease-in-out all;
+      margin-bottom: 15px;
+      margin-top: 25px;
       &:hover {
         background: transparent;
         color: #000000;
@@ -806,7 +808,7 @@
   &__transfer-form-box {
     flex-direction: column;
     width: 50%;
-    max-width: 300px;
+    max-width: 320px;
   }
 
   &__transfer-form-sum {
@@ -814,6 +816,7 @@
     font-size: 13px;
     text-transform: uppercase;
     color: #040404;
+    margin-bottom: 15px;
   }
   &__transfer-form-desc {
     font-weight: normal;
@@ -826,12 +829,32 @@
 @media (max-width: $xl) {
   .personal-main {
     &__table {
-      margin-right: 35px;
+      padding-right: 35px;
     }
 
     &__box {
       width: 49%;
       padding: 25px 15px 30px;
+    }
+
+    &__transfer {
+      padding-right: 35px;
+    }
+    &__transfer-wrap {
+      padding: 25px 15px 30px;
+    }
+    &__transfer-box{
+      max-width: 280px;
+      &:first-of-type{
+        &:after{
+          right: -31px;
+          width: 20px;
+          height: 27px;
+        }
+      }
+    }
+    &__transfer-form-box{
+      max-width: 280px;
     }
   }
 }
@@ -843,11 +866,12 @@
     }
     &__table {
       margin-bottom: 20px;
+      border-right: none;
+      padding-right: 0;
     }
     &__news {
       padding-left: 0;
       border-left: none;
-      margin-top: 0;
     }
     &__news-list {
       flex-direction: row;
@@ -889,6 +913,26 @@
     &__history-btn {
       margin-top: -20px;
     }
+
+    &__transfer {
+      margin-bottom: 40px;
+      padding-right: 0;
+    }
+    &__transfer-wrap {
+      width: 100%;
+      padding: 25px 40px 35px;
+      height: auto;
+    }
+    &__transfer-box{
+      &:first-of-type{
+        &:after {
+          right: -54px;
+          width: 30px;
+          height: 27px;
+        }
+      }
+    }
+
   }
 }
 
@@ -911,6 +955,46 @@
       padding: 14px 0 14px 20px;
     }
 
+
+    &__transfer {
+
+    }
+    &__transfer-wrap {
+      padding: 25px 15px 35px;
+    }
+    &__transfer-box-wrap{
+      flex-direction: column;
+    }
+    &__transfer-box{
+      width: 100%;
+      max-width: 100%;
+      &:first-of-type{
+        .personal-main__transfer-table{
+          margin-bottom: 20px;
+        }
+        &:after{
+          position: static;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    &__transfer-form {
+      form{
+        flex-wrap: wrap;
+
+      }
+      input[type='submit']{
+        margin-top: 0;
+      }
+    }
+    &__transfer-form-box{
+      width: 100%;
+      max-width: 100%;
+    }
   }
 
 }
@@ -1069,6 +1153,15 @@
       margin-top: 22px;
     }
 
+
+    &__transfer {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    &__transfer-wrap {
+      padding: 5px 0px 35px;
+      border: none;
+    }
   }
 
 }
