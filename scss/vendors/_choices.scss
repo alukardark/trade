@@ -135,7 +135,7 @@
   }
 }
 
-.personal-area__calculator, .history__select {
+.personal-area__calculator, .history__select, .personal-main__transfer-select {
   .choices {
     margin-bottom: 0;
     display: flex;
@@ -245,7 +245,7 @@
   }
 }
 
-.history__select{
+.history__select, .personal-main__transfer-select{
   .choices {
     &__inner {
       text-transform: none;
@@ -279,7 +279,7 @@
     }
   }
 
-  .personal-area__calculator, .history__select {
+  .personal-area__calculator, .history__select, .personal-main__transfer-select {
     .choices {
       &__list {
         &--dropdown {

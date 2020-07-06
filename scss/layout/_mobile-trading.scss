@@ -49,27 +49,9 @@
       justify-content: center;
       padding-top: 2px;
       position: relative;
-      &:before {
-        content: '';
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        right: 0;
-        background: #B01D1E;
-        z-index: -1;
-        margin-right: -10px;
-        margin-top: 10px;
-        transition: all 0.2s ease-in;
-        opacity: 0;
-      }
       &:hover {
         border-color: #B01D1E;
-        color: #fff;
-        &:before {
-          opacity: 1;
-          margin: 0;
-        }
+        color: #B01D1E;
       }
       i {
         background-repeat: no-repeat;
@@ -78,6 +60,20 @@
         margin-right: 14px;
         margin-top: -3px;
         transition: .2s ease-in-out all;
+        position: relative;
+        &:before{
+          content: '';
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          transition: .2s ease-in-out all;
+          opacity: 0;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+        }
       }
     }
   }
@@ -86,10 +82,15 @@
       background-image: url(../img/apple.svg);
       width: 12px;
       height: 15px;
+      &:before{
+        background-image: url(../img/apple-red.svg);
+      }
     }
     &:hover {
       i {
-        background-image: url(../img/apple-white.svg);
+        &:before{
+          opacity: 1;
+        }
       }
     }
   }
@@ -98,11 +99,16 @@
       background-image: url(../img/google-play.svg);
       width: 10px;
       height: 14px;
+      &:before{
+        background-image: url(../img/google-play-red.svg);
+      }
     }
     &:hover {
-      i {
-        background-image: url(../img/google-play-white.svg);
-      }
+     i{
+       &:before{
+         opacity: 1;
+       }
+     }
     }
   }
 }

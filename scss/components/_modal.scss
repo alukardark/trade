@@ -327,7 +327,7 @@
       position: relative;
       display: flex;
       justify-content: space-between;
-      input[type='text'], input[type='password'] {
+      input[type='text'], input[type='password'], input[type='number'] {
         font-size: 50px;
         text-align: center;
         background: transparent;
@@ -430,7 +430,7 @@
     &--google-authentication {
       form {
         width: 400px;
-        input[type='text'], input[type='password'] {
+        input[type='text'], input[type='password'], input[type='number'] {
           font-size: 33px;
           width: 50px;
         }
@@ -524,7 +524,7 @@
     &--google-authentication {
       form {
         width: 100%;
-        input[type='text'], input[type='password'] {
+        input[type='text'], input[type='password'], input[type='number'] {
           font-size: 24px;
           width: 45px;
         }

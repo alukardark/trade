@@ -88,6 +88,14 @@
     }
   }
 }
+.temporary-link{
+  position: absolute;
+  z-index: 100;
+  top: 100px;
+  right: 15px;
+  text-decoration: underline;
+  color: #bfbfbf;
+}
 
 .blur{
   filter: blur(10px);
@@ -133,5 +141,13 @@
     position: relative !important;
     top: 0 !important;
     left: 0 !important;
+  }
+  .temporary-link{
+    top: 70px;
+  }
+}
+@media (max-width: $sm) {
+  .temporary-link{
+    top: 60px;
   }
 }

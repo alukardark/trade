@@ -155,3 +155,31 @@ document.addEventListener('click', function (event) {
 event('.setting__btn-close', 'click', function (e) {
     this.nextElementSibling.click();
 });
+
+
+
+
+event('.transfer-btn', 'click', function (e) {
+    this.parentNode.parentNode.classList.remove('active');
+
+    document.querySelectorAll('.transfer-cont').forEach(el=>{
+        if(el.classList.contains('active')){
+            el.classList.remove('active')
+        }else{
+            el.classList.add('active')
+        }
+    })
+});
+event('.personal-main__wrap .back', 'click', function (e) {
+    document.querySelectorAll('.transfer-cont').forEach(el=>{
+        if(el.classList.contains('active')){
+            el.classList.remove('active')
+        }else{
+            el.classList.add('active')
+        }
+    })
+});
+
+
+document.querySelector('.transfer-btn').click();
+

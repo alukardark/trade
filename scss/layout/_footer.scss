@@ -274,27 +274,9 @@
     justify-content: center;
     transition: .2s ease-in-out all;
     position: relative;
-    &:before {
-      content: '';
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      right: 0;
-      background: #B01D1E;
-      z-index: -1;
-      margin-right: -10px;
-      margin-top: 10px;
-      transition: all 0.2s ease-in;
-      opacity: 0;
-    }
     &:hover {
       border-color: #B01D1E;
-      color: #fff;
-      &:before {
-        opacity: 1;
-        margin: 0;
-      }
+      color: #B01D1E;
     }
   }
 
@@ -395,7 +377,7 @@
   }
 
   &--lk{
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     .footer__profile{
       justify-content: flex-end;
       margin-right: 15px;
