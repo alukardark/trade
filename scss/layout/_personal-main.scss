@@ -725,7 +725,7 @@
         height: 27px;
         position: absolute;
         top: 40px;
-        right: -90px;
+        right: -86px;
         background: url(../img/left-right.svg) center/contain no-repeat;
       }
     }
@@ -844,17 +844,15 @@
       padding: 25px 15px 30px;
     }
     &__transfer-box{
-      max-width: 280px;
+      max-width: 270px;
       &:first-of-type{
         &:after{
-          right: -31px;
-          width: 20px;
-          height: 27px;
+          right: -46px;
         }
       }
     }
     &__transfer-form-box{
-      max-width: 280px;
+      max-width: 270px;
     }
   }
 }
@@ -926,7 +924,7 @@
     &__transfer-box{
       &:first-of-type{
         &:after {
-          right: -54px;
+          right: -62px;
           width: 30px;
           height: 27px;
         }

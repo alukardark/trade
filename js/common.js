@@ -105,6 +105,20 @@ if (document.querySelector('.history__select.scrollbar')) {
     });
 }
 
+if (document.querySelector('.personal-main__transfer-select.scrollbar')) {
+    document.querySelectorAll('.personal-main__transfer-select.scrollbar').forEach(el => {
+        el.addEventListener(
+            'showDropdown',
+            function (event) {
+                new SimpleBar(el.querySelector('.choices__list--dropdown .choices__list'), {
+                    autoHide: false
+                });
+            },
+            false,
+        );
+    });
+}
+
 if (document.querySelector('.personal-main .scrollbar--horizontal')) {
     document.querySelectorAll('.personal-main .scrollbar--horizontal').forEach(el => {
         new SimpleBar(el, {
