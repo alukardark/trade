@@ -5,6 +5,22 @@
       display: block;
     }
   }
+  &--vh{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 415px);
+    .accordion-cont{
+      width: 100%;
+    }
+  }
 }
 
 
+@media (max-width: $md) {
+  .accordion{
+    &--vh{
+      display: block;
+    }
+  }
+}
