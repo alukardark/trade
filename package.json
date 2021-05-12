@@ -17,7 +17,7 @@
     "gulp-uglifyjs": "^0.6.2",
     "normalize.scss": "^0.1.0",
     "simple-parallax-js": "^5.5.1",
-    "swiper": "^4.4.6",
+    "swiper": "^6.5.1",
     "wow.js": "^1.2.2",
     "@cycjimmy/swiper-animation": "^4.1.0",
     "animate.css": "^4.1.0",
